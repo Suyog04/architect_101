@@ -6,20 +6,20 @@ const Navbar = () => {
     <>
       <ul className="nav justify-content-end">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Active</a>
+          <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
+          <a className="nav-link" href="/">Projects</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
+          <a className="nav-link" href="/">About Us</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a className="nav-link" href="/" >Blog</a>
         </li>
       </ul>
     </>
   )
 }
 
-export default navbar
+export default Navbar
