@@ -8,7 +8,7 @@ const Home = () => {
       <section className = "main-container">
           <ul className="nav1">
             <li className="navitem">
-              <a className="navlink " href="/">Home</a>
+              <a className="navlink" href="/">Home</a>
             </li>
             <li className="navitem">
               <a className="navlink" href="/projects">Projects</a>
