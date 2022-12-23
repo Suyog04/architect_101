@@ -27,6 +27,34 @@ const Home = () => {
           <h2>Team of talented people.</h2>
         </div>
       </section>
+
+      
+      <section>
+        <div>
+          <h1>Process Team Work </h1>
+          <br />
+          <br />
+          <p>This is how our team works.</p>
+        </div>
+        <div>
+          <h1>Perfect design.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+              asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+              autem</p>
+        </div>
+        <div>
+          <h1>Carefully Planned.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+              asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+              autem</p>
+        </div>
+        <div>
+          <h1>Smartly executed</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+              asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+              autem</p>
+        </div>
+      </section>
     </>
   )
 }
