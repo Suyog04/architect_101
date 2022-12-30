@@ -31,7 +31,7 @@
   height: 100%;
   font-size: 26px;
   font-family:'Poppins', sans-serif;;
-  color: var(--light);
+  color: var(--white);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -80,3 +80,9 @@
   left:0;
   width: 100%;
 }
+
+.team
+{
+  background-color: #aaa49e;
+}
+

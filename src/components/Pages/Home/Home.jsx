@@ -29,9 +29,9 @@ const Home = () => {
       </section>
 
       
-      <section>
+      <section className = "team">
         <div>
-          <h1>Process Team Work </h1>
+          <h1 className="team-heading">Process Team Work </h1>
           <br />
           <br />
           <p>This is how our team works.</p>
