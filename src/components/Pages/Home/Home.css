@@ -84,5 +84,40 @@
 .team
 {
   background-color: #aaa49e;
+  height: 100vh;
+  text-align: center;
+  padding: 100px;
+}
+
+.team h1
+{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.team p 
+{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+
+.row
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.team-col
+{
+  flex-basis: 31%;
+  background-color: rgb(206, 198, 198);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
 }
 
