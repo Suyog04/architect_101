@@ -53,6 +53,18 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section className = "define-product">
+        <div>
+          <h1>Crafting with cure.</h1>
+          <h2>Creative. Innovation. Balanced.</h2>
+          <p>The unique architect with ideas from outside the world. The new level of evolution.</p>
+        </div>
+        <div>
+          <img src =  {} />
+        </div>
+      </section>
+      
     </>
   )
 }
