@@ -121,3 +121,17 @@
   box-sizing: border-box;
 }
 
+.define-product
+{
+  height: 100vh;
+}
+
+.product-design img
+{
+  display: -webkit-box;
+  margin-left: auto;
+  width: 300px;  
+  height: auto;  
+  padding: 15px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

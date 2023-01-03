@@ -1,5 +1,5 @@
 import React from 'react'
-
+import blueprint from './blueprint.jpeg'
 import './Home.css'
 
 const Home = () => {
@@ -55,13 +55,13 @@ const Home = () => {
       </section>
 
       <section className = "define-product">
-        <div>
+        <div className = "product-heading">
           <h1>Crafting with cure.</h1>
           <h2>Creative. Innovation. Balanced.</h2>
           <p>The unique architect with ideas from outside the world. The new level of evolution.</p>
         </div>
-        <div>
-          <img src =  {} />
+        <div className = "product-design">
+          <img src = {blueprint} alt = "blueprint" />
         </div>
       </section>
       
