@@ -57,7 +57,9 @@ const Home = () => {
       <section className = "define-product">
         <div className = "product-heading">
           <h1>Crafting with cure.</h1>
+          <br/>
           <h2>Creative. Innovation. Balanced.</h2>
+          <br />
           <p>The unique architect with ideas from outside the world. The new level of evolution.</p>
         </div>
         <div className = "product-design">

@@ -124,14 +124,44 @@
 .define-product
 {
   height: 100vh;
+  width:100%;
+  box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 5% 0px 5%;
+	position: relative;
+}
+
+
+.product-heading
+{
+  width: 50%;
+}
+.product-heading h1 
+{
+  font-size: 5rem;
+}
+
+.product-heading h2
+{
+  font-size: 3rem;
+	
+	font-weight: 400;
+}
+.product-heading h1 h2 
+{
+  margin: 0px;
+	padding: 0px;
+}
+.product-heading p
+{
+  font-size: 1.2rem;
 }
 
 .product-design img
 {
-  display: -webkit-box;
-  margin-left: auto;
-  width: 300px;  
+  width: 500px;  
   height: auto;  
-  padding: 15px;  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
