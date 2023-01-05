@@ -1,0 +1,10 @@
+.footer 
+{
+    height: 100vh;
+}
+
+.nav-bar .footer-navbar .footer-navitem
+{
+    list-style: none;
+    align-items: center;
+}

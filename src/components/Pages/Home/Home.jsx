@@ -1,5 +1,6 @@
 import React from 'react'
 import blueprint from './blueprint.jpeg'
+import Footer from '../footer/Footer'
 import './Home.css'
 
 const Home = () => {
@@ -66,7 +67,7 @@ const Home = () => {
           <img src = {blueprint} alt = "blueprint" />
         </div>
       </section>
-      
+      <Footer />
     </>
   )
 }
