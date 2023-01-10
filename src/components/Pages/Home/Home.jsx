@@ -1,5 +1,6 @@
 import React from 'react'
-
+import blueprint from './blueprint.jpeg'
+import Footer from '../footer/Footer'
 import './Home.css'
 
 const Home = () => {
@@ -30,31 +31,43 @@ const Home = () => {
 
       
       <section className = "team">
-        <div>
-          <h1 className="team-heading">Process Team Work </h1>
-          <br />
-          <br />
-          <p>This is how our team works.</p>
-        </div>
-        <div>
-          <h1>Perfect design.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
-              asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
-              autem</p>
-        </div>
-        <div>
-          <h1>Carefully Planned.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
-              asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
-              autem</p>
-        </div>
-        <div>
-          <h1>Smartly executed</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
-              asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
-              autem</p>
+        <h1>Process Team Work </h1>
+        <p>This is how our team works.</p>
+        <div className='row'>
+          <div className='team-col'>
+            <h1>Perfect design.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+                asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+                autem</p>
+          </div>
+          <div className = "team-col">
+            <h1>Carefully Planned.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+                asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+                autem</p>
+          </div>
+          <div className = 'team-col'>
+            <h1>Smartly executed</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore at similique ratione, qui
+                asperiores omnis numquam ea ut nulla voluptate, aliquid magni recusandae! Eum id ex officiis optio
+                autem</p>
+          </div>
         </div>
       </section>
+
+      <section className = "define-product">
+        <div className = "product-heading">
+          <h1>Crafting with cure.</h1>
+          <br/>
+          <h2>Creative. Innovation. Balanced.</h2>
+          <br />
+          <p>The unique architect with ideas from outside the world. The new level of evolution.</p>
+        </div>
+        <div className = "product-design">
+          <img src = {blueprint} alt = "blueprint" />
+        </div>
+      </section>
+      <Footer />
     </>
   )
 }
