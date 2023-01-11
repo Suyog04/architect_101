@@ -8,7 +8,7 @@ const Footer = () => {
         <div className = "nav-bar">
           <ul className = "footer-navbar">
             <li className = "footer-navitem">
-              <a href="/">Home</a>
+              <a href="#">Home</a>
             </li>
             <li className = "footer-navitem">
               <a href="/projects">Projects</a>
