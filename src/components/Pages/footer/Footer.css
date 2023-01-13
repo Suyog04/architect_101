@@ -1,6 +1,8 @@
 .footer 
 {
     height: 100vh;
+    padding: 40px;
+    background-color: #aaa49e;
 }
 
 .nav-bar
@@ -23,3 +25,10 @@
     text-decoration: none;
     list-style: none;
 }
+
+.social-media 
+{
+    display: flex;
+    justify-content: space-between;
+}
+

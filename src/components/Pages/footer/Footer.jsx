@@ -22,6 +22,7 @@ const Footer = () => {
           </ul>
         </div>
         <br />
+        <br />
         <div className = "social-media">
           <div className = "contact">
             <h2>Contact Us</h2>
