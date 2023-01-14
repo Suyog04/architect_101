@@ -42,6 +42,9 @@ const Footer = () => {
           </div>
 
         </div>
+        <div className = "social-media_01">
+          facebook
+        </div>
       </section>
     </>
   )
