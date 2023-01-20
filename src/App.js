@@ -20,9 +20,7 @@ const App = () => {
           <Route exact path = "/blog" element = {<Blog />} />
         </Routes>
       </BrowserRouter>
-      <div>
-        
-      </div>
+     
     </>
   )
 }
