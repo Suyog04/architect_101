@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { FiFacebook, FiMail } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -22,16 +23,21 @@ const Footer = () => {
           </ul>
         </div>
         <br />
+        <br />
+        <br />
         <div className = "social-media">
           <div className = "contact">
             <h2>Contact Us</h2>
-            <p>Address</p>
-            <p>Phone Number</p>
+            <a className = "map-links" href = "https://goo.gl/maps/zSbcF1p4okhpQGuy8">Kupondole</a>
+            <p>+977-985-1279621</p>
           </div>
 
           <div clasName = "logo-footer">
-            <h1>Logo image</h1>
-            <p>quote</p>
+            <h1 className = "logo">Logo image</h1>
+            <div className = "link">
+              <a href = "https://www.facebook.com/brickarchitectsandengineers"><FiFacebook /></a>
+              <FiMail />
+            </div>
           </div>
 
           <div className='work-hour'>
@@ -39,7 +45,11 @@ const Footer = () => {
             <p>Monday-Friday</p>
             <p>8:00 am - 12:00 am</p>
           </div>
-
+        </div>
+        <br />
+        <br/>
+        <div className='copy-right'>
+          <p>2023 Brick Architecture. All Rights reserved.</p>
         </div>
       </section>
     </>
