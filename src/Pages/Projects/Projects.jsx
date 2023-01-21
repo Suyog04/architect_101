@@ -1,5 +1,9 @@
 import React from 'react'
 import './Projects.css'
+import  Footer from '../footer/Footer'
+
+// importing images
+import recreational from '../../Assets/recreational.jpeg'
 
 const Projects = () => {
   return (
@@ -21,10 +25,26 @@ const Projects = () => {
           </ul>
         <div className = "home-heading_03">
           <h1>
-            Projects
+            Our Projects
           </h1>
         </div>
+          <div className='row_01'>
+          <div className='team-col_01'>
+            <h1>Category 1</h1>
+            <img src = {recreational} lat = "recreational" />
+          </div>
+          <div className = "team-col_01">
+            <h1>Category 2</h1>
+            
+          </div>
+          <div className = 'team-col_01'>
+            <h1>Category 3</h1>
+            
+          </div>
+        </div>
+        
       </section>
+      <Footer />
     </>
   )
 }

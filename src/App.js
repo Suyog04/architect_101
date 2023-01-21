@@ -3,10 +3,10 @@ import React from 'react'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 // Importing pages from Pages component
-import Home from "./components/Pages/Home/Home"
-import AboutUs from './components/Pages/AboutUs/AboutUs'
-import Projects from './components/Pages/Projects/Projects'
-import Blog from './components/Pages/Blog/Blog'
+import Home from "./Pages/Home/Home"
+import AboutUs from './Pages/AboutUs/AboutUs'
+import Projects from './Pages/Projects/Projects'
+import Blog from './Pages/Blog/Blog'
 
 const App = () => {
   return (

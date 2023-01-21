@@ -1,5 +1,5 @@
 import React from 'react'
-import blueprint from './blueprint.jpeg'
+import blueprint from '../../Assets/blueprint.jpeg'
 import Footer from '../footer/Footer'
 import './Home.css'
 

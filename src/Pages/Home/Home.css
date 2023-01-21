@@ -18,7 +18,7 @@
 }
 .main-container
 {
-  background-image: url('./architecture.jpeg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url('../../Assets/architecture.jpeg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode:color-burn;
   background-size: cover;
   max-width: 100%;
