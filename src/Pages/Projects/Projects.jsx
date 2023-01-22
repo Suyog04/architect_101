@@ -4,6 +4,8 @@ import  Footer from '../footer/Footer'
 
 // importing images
 import recreational from '../../Assets/recreational.jpeg'
+import commercial from '../../Assets/commercial.jpeg'
+import industrial from '../../Assets/industrial.png'
 
 const Projects = () => {
   return (
@@ -30,16 +32,26 @@ const Projects = () => {
         </div>
           <div className='row_01'>
           <div className='team-col_01'>
-            <h1>Category 1</h1>
             <img src = {recreational} lat = "recreational" />
+            <div className = "layer">
+              <h3>
+                Recreational
+              </h3>
+            </div>
           </div>
           <div className = "team-col_01">
-            <h1>Category 2</h1>
-            
+            <img src = {commercial} alt = "commercial" />
+            <div className = "layer">
+              <h3>
+                Commercial
+              </h3>
+            </div>
           </div>
           <div className = 'team-col_01'>
-            <h1>Category 3</h1>
-            
+            <img src = {industrial} alt = "industrial" />
+            <div className = "layer">
+              <h3>Industrial</h3>
+            </div>
           </div>
         </div>
         

@@ -18,6 +18,7 @@
 }
 .main-container_01
 {
+  background-image: url('../../Assets/about.jpeg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode:color-burn;
   background-size: cover;
   max-width: 100%;
@@ -28,13 +29,14 @@
 {
   width: 100%;
   height: 100%;
-  font-size: 26px;
+  font-size: 50px;
   font-family:'Poppins', sans-serif;;
-  color: var(--light);
+  color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 3rem;
 }
 
 
@@ -56,7 +58,7 @@
 .navitem_01 .navlink_01 
 {
   position: absolute;
-  color: var(--light);
+  color: white;
   text-decoration: none;
   padding: 7px 0;
   font-size: 1.3rem;
@@ -78,4 +80,18 @@
 {
   left:0;
   width: 100%;
+}
+
+.about
+{
+  height: 200vh;
+}
+
+
+.about-content img
+{
+  height: 500px;
+  width: 700px;
+  float: right; 
+  margin-right: 15px;
 }

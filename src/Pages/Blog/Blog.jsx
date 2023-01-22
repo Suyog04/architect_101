@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Blog/Blog.css'
+import Footer from "../footer/Footer"
 
 const Blog = () => {
   return (
@@ -25,6 +26,7 @@ const Blog = () => {
           </h1>
         </div>
       </section>
+      <Footer />
     </>
   )
 }
