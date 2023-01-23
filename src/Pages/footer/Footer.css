@@ -43,11 +43,16 @@
     color: #e1d9cf;
 }
 
-.logo img
+.logo 
 {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    height: 10%;
-    width: 10%;
+}
+
+.logo img 
+{
+    width: 150px;
 }
 
 .link 
