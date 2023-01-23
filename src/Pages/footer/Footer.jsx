@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { FiFacebook, FiMail } from "react-icons/fi";
+import { FiFacebook, FiMail, FiInstagram } from "react-icons/fi";
 import logo from '../../Assets/brick2.png'
 
 const Footer = () => {
@@ -40,6 +40,7 @@ const Footer = () => {
             <div className = "link">
               <a href = "https://www.facebook.com/brickarchitectsandengineers"><FiFacebook /></a>
               <FiMail />
+              <a href = "https://www.instagram.com/brickarchitects_engineers/?igshid=YmMyMTA2M2Y%3D"><FiInstagram /></a>
             </div>
           </div>
 
