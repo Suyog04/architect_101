@@ -43,11 +43,11 @@
     color: #e1d9cf;
 }
 
-
-
-.logo
+.logo img
 {
-    color:#e1d9cf;
+    align-items: center;
+    height: 10%;
+    width: 10%;
 }
 
 .link 
