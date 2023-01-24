@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { FiFacebook, FiMail, FiInstagram } from "react-icons/fi";
-import logo from '../../Assets/brick2.png'
+import logo from '../../Assets/logo.png'
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className = "nav-bar">
           <ul className = "footer-navbar">
             <li className = "footer-navitem">
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li className = "footer-navitem">
               <a href="/projects">Projects</a>
@@ -35,11 +35,11 @@ const Footer = () => {
 
           <div clasName = "logo-footer">
             <div className = "logo">
-              <img src = {logo} alt = "logo" />
+              <a href = "/"> <img src = {logo} alt = "logo" /></a>
             </div>
             <div className = "link">
               <a href = "https://www.facebook.com/brickarchitectsandengineers"><FiFacebook /></a>
-              <FiMail />
+              <a href = "mailto: brickane@gmail.com"><FiMail /></a>
               <a href = "https://www.instagram.com/brickarchitects_engineers/?igshid=YmMyMTA2M2Y%3D"><FiInstagram /></a>
             </div>
           </div>
