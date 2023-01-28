@@ -1,13 +1,35 @@
 import React from 'react'
 import './Projects.css'
 import  Footer from '../footer/Footer'
+import {Routes, Route, useNavigate} from 'react-router-dom';
+
 
 // importing images
 import recreational from '../../Assets/recreational.jpeg'
 import commercial from '../../Assets/commercial.jpeg'
 import industrial from '../../Assets/industrial.png'
 
-const Projects = () => {
+const Projects = () => 
+{
+  // We use useNavigate() hooks
+  const navigate = useNavigate();
+
+  // function to navigate to the project
+  const navigateToRecreational = () =>
+  {
+    navigate('')
+  }
+
+  const navigateToCommercial = () =>
+  {
+    navigate('')
+  }
+
+  const navigateToIndustrial = () =>
+  {
+    navigate('')
+  }
+
   return (
     <>
       <section className = "main-container_03">
@@ -40,7 +62,7 @@ const Projects = () => {
             </div>
           </div>
           <div className = "team-col_01">
-            <img src = {commercial} alt = "commercial" />
+            <button onClick = {navigateToRecreational}><img src = {commercial} alt = "commercial" /></button>
             <div className = "layer">
               <h3>
                 Commercial
