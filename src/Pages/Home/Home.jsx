@@ -2,6 +2,7 @@ import React from 'react'
 import blueprint from '../../Assets/blueprint.jpeg'
 import Footer from '../footer/Footer'
 import './Home.css'
+import logo from '../../Assets/logo.png'
 
 const Home = () => {
   return (
@@ -21,6 +22,9 @@ const Home = () => {
               <a className="navlink" href="/blog" >Blog</a>
             </li>
           </ul>
+          <div className= "logo">
+            <img src = {logo} alt="logo" />
+          </div>
         <div className = "home-heading">
           <h1>
             Best architecture in Nepal.
