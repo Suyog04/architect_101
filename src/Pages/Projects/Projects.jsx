@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.css'
-import  Footer from '../footer/Footer'
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import Footer from '../footer/Footer'
+
 
 
 // importing images
@@ -11,24 +11,7 @@ import industrial from '../../Assets/industrial.png'
 
 const Projects = () => 
 {
-  // We use useNavigate() hooks
-  const navigate = useNavigate();
-
-  // function to navigate to the project
-  const navigateToRecreational = () =>
-  {
-    navigate('')
-  }
-
-  const navigateToCommercial = () =>
-  {
-    navigate('')
-  }
-
-  const navigateToIndustrial = () =>
-  {
-    navigate('')
-  }
+  
 
   return (
     <>
@@ -62,11 +45,9 @@ const Projects = () =>
             </div>
           </div>
           <div className = "team-col_01">
-            <button onClick = {navigateToRecreational}><img src = {commercial} alt = "commercial" /></button>
+            <img src = {commercial} alt = "commercial" />
             <div className = "layer">
-              <h3>
-                Commercial
-              </h3>
+              <a href = "/"><h3>Commercial</h3></a>
             </div>
           </div>
           <div className = 'team-col_01'>
