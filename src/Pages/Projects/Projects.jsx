@@ -1,13 +1,18 @@
 import React from 'react'
 import './Projects.css'
-import  Footer from '../footer/Footer'
+import Footer from '../footer/Footer'
+
+
 
 // importing images
 import recreational from '../../Assets/recreational.jpeg'
 import commercial from '../../Assets/commercial.jpeg'
 import industrial from '../../Assets/industrial.png'
 
-const Projects = () => {
+const Projects = () => 
+{
+  
+
   return (
     <>
       <section className = "main-container_03">
@@ -34,23 +39,21 @@ const Projects = () => {
           <div className='team-col_01'>
             <img src = {recreational} lat = "recreational" />
             <div className = "layer">
-              <h3>
+              <a href = "/commercial"><h3>
                 Recreational
-              </h3>
+              </h3></a>
             </div>
           </div>
           <div className = "team-col_01">
             <img src = {commercial} alt = "commercial" />
             <div className = "layer">
-              <h3>
-                Commercial
-              </h3>
+              <a href = "/commercial"><h3>Commercial</h3></a>
             </div>
           </div>
           <div className = 'team-col_01'>
             <img src = {industrial} alt = "industrial" />
             <div className = "layer">
-              <h3>Industrial</h3>
+            <a href = "/commercial"><h3>Industrial</h3></a>
             </div>
           </div>
         </div>
