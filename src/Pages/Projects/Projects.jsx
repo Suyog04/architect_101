@@ -39,21 +39,21 @@ const Projects = () =>
           <div className='team-col_01'>
             <img src = {recreational} lat = "recreational" />
             <div className = "layer">
-              <h3>
+              <a href = "/commercial"><h3>
                 Recreational
-              </h3>
+              </h3></a>
             </div>
           </div>
           <div className = "team-col_01">
             <img src = {commercial} alt = "commercial" />
             <div className = "layer">
-              <a href = "/"><h3>Commercial</h3></a>
+              <a href = "/commercial"><h3>Commercial</h3></a>
             </div>
           </div>
           <div className = 'team-col_01'>
             <img src = {industrial} alt = "industrial" />
             <div className = "layer">
-              <h3>Industrial</h3>
+            <a href = "/commercial"><h3>Industrial</h3></a>
             </div>
           </div>
         </div>
