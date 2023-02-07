@@ -22,7 +22,7 @@ const Blog = () => {
           </ul>
         <div className = "home-heading_02">
           <h1>
-            Blog
+            Our Blog
           </h1>
         </div>
       </section>
