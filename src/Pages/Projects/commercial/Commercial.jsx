@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './Commercial.css'
-import Footer from '../footer/Footer'
+import Footer from '../../footer/Footer'
 
 const Commercial = () => 
 {
