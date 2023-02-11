@@ -12,7 +12,7 @@ import industrial from '../../Assets/industrial.png'
 const Projects = () => 
 {
   
-
+  
   return (
     <>
       <section className = "main-container_03">
@@ -37,9 +37,9 @@ const Projects = () =>
         </div>
           <div className='row_01'>
           <div className='team-col_01'>
-            <img src = {recreational} lat = "recreational" />
+            <img src = {recreational} alt = "recreational" />
             <div className = "layer">
-              <a href = "/commercial"><h3>
+              <a href = "/recreational"><h3>
                 Recreational
               </h3></a>
             </div>
@@ -53,7 +53,7 @@ const Projects = () =>
           <div className = 'team-col_01'>
             <img src = {industrial} alt = "industrial" />
             <div className = "layer">
-            <a href = "/commercial"><h3>Industrial</h3></a>
+            <a href = "/industrial"><h3>Industrial</h3></a>
             </div>
           </div>
         </div>
