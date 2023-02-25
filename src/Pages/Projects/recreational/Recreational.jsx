@@ -1,15 +1,12 @@
 import React from 'react'
 import './Recreational.css'
+import {RecreationalData} from './RecreationalData'
+
 import Footer from '../../footer/Footer'
-import recreational1 from './image1/recreational1.webp'
-import RecreationalData from './RecreationalData'
+
 
 const Recreational = () => 
 {
-  const images = [
-    { src: {recreational1}, alt: 'Alternative text 1' },
-    
-  ]
   return (
     <>
       <section className = "main-container_03">
@@ -27,8 +24,8 @@ const Recreational = () =>
               <a className="navlink_03" href="/blog" >Blog</a>
             </li>
           </ul>
+          <img src = {RecreationalData.image} alt = "hello" />
         </section>
-      <RecreationalData images={images}/>
       <Footer />
     </>
   )
