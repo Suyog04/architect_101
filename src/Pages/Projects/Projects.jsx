@@ -1,6 +1,8 @@
 import React from 'react'
 import './Projects.css'
 import Footer from '../footer/Footer'
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -11,6 +13,7 @@ import industrial from '../../Assets/industrial.png'
 
 const Projects = () => 
 {
+  const navigate = useNavigate();
   
   
   return (
@@ -46,8 +49,8 @@ const Projects = () =>
           </div>
           <div className = "team-col_01">
             <img src = {commercial} alt = "commercial" />
-            <div className = "layer">
-              <a href = "/commercial"><h3>Commercial</h3></a>
+            <div onClick ={() => navigate("/recreational")} className = "layer">
+              <h3>Commercial</h3>
             </div>
           </div>
           <div className = 'team-col_01'>
