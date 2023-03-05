@@ -25,6 +25,7 @@ const Recreational = () =>
             </li>
           </ul>
           <img src = {RecreationalData.image} alt = "hello" />
+          
         </section>
       <Footer />
     </>
