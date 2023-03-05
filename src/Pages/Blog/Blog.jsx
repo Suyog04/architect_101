@@ -1,8 +1,11 @@
-import React from 'react'
-import '../Blog/Blog.css'
+import React, {useState} from 'react'
+import './Blog.css'
 import Footer from "../footer/Footer"
+import data from './data'
+import List from './List'
 
 const Blog = () => {
+  const [people, setPeople] = useState(data)
   return (
     <>
       <section className = "main-container_02">
@@ -22,8 +25,11 @@ const Blog = () => {
           </ul>
         <div className = "home-heading_02">
           <h1>
-            Our Blog
+            Our Blog 
           </h1>
+          <div className = "person_01">
+            <List people = {people} />
+          </div>
         </div>
       </section>
       <Footer />

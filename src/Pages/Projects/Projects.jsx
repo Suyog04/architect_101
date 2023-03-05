@@ -41,22 +41,22 @@ const Projects = () =>
           <div className='row_01'>
           <div className='team-col_01'>
             <img src = {recreational} alt = "recreational" />
-            <div className = "layer">
-              <a href = "/recreational"><h3>
+            <div onClick = {() => navigate("/recreational")} className = "layer">
+              <h3>
                 Recreational
-              </h3></a>
+              </h3>
             </div>
           </div>
           <div className = "team-col_01">
             <img src = {commercial} alt = "commercial" />
-            <div onClick ={() => navigate("/recreational")} className = "layer">
+            <div onClick ={() => navigate("/commercial")} className = "layer">
               <h3>Commercial</h3>
             </div>
           </div>
           <div className = 'team-col_01'>
             <img src = {industrial} alt = "industrial" />
-            <div className = "layer">
-            <a href = "/industrial"><h3>Industrial</h3></a>
+            <div onClick = {() => navigate("/industrial")} className = "layer">
+            <h3>Industrial</h3>
             </div>
           </div>
         </div>
