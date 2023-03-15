@@ -1,6 +1,6 @@
 import React from 'react'
 import './Recreational.css'
-import {RecreationalData} from './RecreationalData'
+import {RecreationalData} from './recreationalData'
 
 import Footer from '../../footer/Footer'
 
