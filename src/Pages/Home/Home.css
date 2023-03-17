@@ -75,41 +75,68 @@
 }
 
 .team {
-  background-color: #aaa49e;
+  background-color: #e1d9cf;
   height: 200vh;
-  text-align: center;
-  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 5%;
 }
 
 .team h1 {
   font-size: 70px;
-  font-weight: 600;
+  text-align: center;
 }
 
-.team p {
+.row_des h2 {
+  padding-top: 4rem;
+  font-size: 50px;
+}
+
+.row_des h3 {
+  font-size: 30px;
+}
+
+.row_des p {
+  padding-top: 1rem;
+  padding-right: 2rem;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
 }
 
-.row {
+.row_01 {
   display: flex;
-  justify-content: space-between;
 }
 
-.team-col {
-  flex-basis: 31%;
-  background-color: rgb(206, 198, 198);
-  border-radius: 20px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
+.row_img img {
+  height: 200%;
+  padding-right: 3rem;
+  padding-top: 4rem;
 }
 
-.team-col img {
-  border-radius: 30%;
-  width: 100px;
+.row_01 {
+  display: flex;
+}
+
+.row_img_01 img {
+  height: 200%;
+  padding-right: 3rem;
+  padding-top: 4rem;
+}
+
+.row_des_01 h2 {
+  padding-top: 4rem;
+  font-size: 50px;
+}
+
+.row_des_01 h3 {
+  font-size: 30px;
+}
+
+.row_des_01 p {
+  padding-top: 1rem;
+  padding-right: 2rem;
+  font-size: 20px;
 }
 
 .define-product {

@@ -1,12 +1,6 @@
-<<<<<<< Updated upstream
-import React from 'react'
-import './Recreational.css'
-import {RecreationalData} from './recreationalData'
-=======
 import React from "react";
 import "./Recreational.css";
 import { recreationalData } from "./recreationalData";
->>>>>>> Stashed changes
 
 import Footer from "../../footer/Footer";
 
