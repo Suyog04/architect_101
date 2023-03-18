@@ -63,7 +63,10 @@ const Home = () => {
         </div>
 
         <div className="row_02">
-          <div className="row_des_01">
+          <div className="row_img01">
+              <img src={image} alt="person" />
+          </div>
+          <div className="row_des_01">            
             <h2>Ayush Bista</h2>
             <h3>Architecture</h3>
             <p>
@@ -76,9 +79,6 @@ const Home = () => {
               these skills in order to ensure each and every design created will
               be unique and tailored directly to you.
             </p>
-          </div>
-          <div className="row_img01">
-            <img src={image} alt="person" />
           </div>
         </div>
       </section>

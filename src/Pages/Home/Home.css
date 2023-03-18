@@ -76,7 +76,7 @@
 
 .team {
   background-color: #e1d9cf;
-  height: 200vh;
+  height: 300vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -109,34 +109,37 @@
 }
 
 .row_img img {
-  height: 200%;
-  padding-right: 3rem;
-  padding-top: 4rem;
+  height: 130%;
+  padding-right: 1rem;
+  padding-top: 8rem;
 }
 
-.row_01 {
+.row_02 {
   display: flex;
 }
-
-.row_img_01 img {
-  height: 200%;
-  padding-right: 3rem;
-  padding-top: 4rem;
+.row_img01 img {
+  height: 110%;
+  padding-right: 1rem;
+  padding-top: 15rem;
+  padding-left: 2rem;
 }
 
 .row_des_01 h2 {
-  padding-top: 4rem;
+  padding-top: 15rem;
   font-size: 50px;
+  padding-left: 5%;
 }
 
 .row_des_01 h3 {
   font-size: 30px;
+  padding-left: 5%;
 }
 
 .row_des_01 p {
   padding-top: 1rem;
   padding-right: 2rem;
   font-size: 20px;
+  padding-left: 5%;
 }
 
 .define-product {
