@@ -1,6 +1,6 @@
 import React from "react";
 import "./Recreational.css";
-import { recreationalData } from "./recreationalData";
+import Data from "./recreationalData.json";
 
 import Footer from "../../footer/Footer";
 
@@ -30,7 +30,19 @@ const Recreational = () => {
             </a>
           </li>
         </ul>
-        <img src={recreationalData.image} alt="hello" />
+
+        <div>
+          {Data &&
+            Data.map((data) => {
+              return (
+                <div>
+                  <img src={data.icon} />
+                  <br />
+                  {data.id}
+                </div>
+              );
+            })}
+        </div>
       </section>
       <Footer />
     </>
