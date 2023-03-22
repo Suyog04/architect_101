@@ -74,75 +74,45 @@
   width: 100%;
 }
 
-.team {
+.teams {
   background-color: #e1d9cf;
   height: 300vh;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 10%;
-  padding-left: 5%;
+  padding: 10% 5%;
+  gap: 3rem;
 }
 
-.team h1 {
+.teams > h1 {
   font-size: 70px;
   text-align: center;
 }
 
-.row_des h2 {
+.team{
+  display: flex;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.team-info > h2{
+  font-size: 50px;
   padding-top: 4rem;
-  font-size: 50px;
 }
 
-.row_des h3 {
+.team-info > h3{
   font-size: 30px;
 }
 
-.row_des p {
-  padding-top: 1rem;
-  padding-right: 2rem;
+.team-info > p{
   font-size: 20px;
-}
-
-.row_01 {
-  display: flex;
-}
-
-.row_img img {
-  height: 130%;
-  padding-right: 1rem;
-  padding-top: 8rem;
-}
-
-.row_02 {
-  display: flex;
-  border: 1px solid red;
-}
-
-.row_img01 img {
-  height: 110%;
-  padding-right: 1rem;
-  padding-top: 15rem;
-  padding-left: 2rem;
-}
-
-.row_des_01 h2 {
-  padding-top: 15rem;
-  font-size: 50px;
-  padding-left: 5%;
-}
-
-.row_des_01 h3 {
-  font-size: 30px;
-  padding-left: 5%;
-}
-
-.row_des_01 p {
   padding-top: 1rem;
-  padding-right: 2rem;
-  font-size: 20px;
-  padding-left: 5%;
 }
+
+.image{
+  /* Change the image height/width */
+}
+
 
 .define-product {
   height: 100vh;

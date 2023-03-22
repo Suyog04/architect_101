@@ -40,10 +40,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="team">
+      <section className="teams">
         <h1>Our Team</h1>
-        <div className="row_01">
-          <div className="row_des">
+        <div className="team item-1">
+          <div className="team-info">
             <h2>Ayush Bista</h2>
             <h3>Architecture</h3>
             <p>
@@ -60,9 +60,9 @@ const Home = () => {
            <img className="image" src={image} alt="person" />
         </div>
 
-        <div className="row_02">
+        <div className="team item-2">
           <img className="image" src={image} alt="person" />
-          <div className="row_des_01">            
+          <div className="team-info">            
             <h2>Ayush Bista</h2>
             <h3>Architecture</h3>
             <p>
