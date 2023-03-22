@@ -75,41 +75,73 @@
 }
 
 .team {
-  background-color: #aaa49e;
-  height: 200vh;
-  text-align: center;
-  padding: 100px;
+  background-color: #e1d9cf;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 5%;
 }
 
 .team h1 {
   font-size: 70px;
-  font-weight: 600;
+  text-align: center;
 }
 
-.team p {
+.row_des h2 {
+  padding-top: 4rem;
+  font-size: 50px;
+}
+
+.row_des h3 {
+  font-size: 30px;
+}
+
+.row_des p {
+  padding-top: 1rem;
+  padding-right: 2rem;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
 }
 
-.row {
+.row_01 {
   display: flex;
-  justify-content: space-between;
 }
 
-.team-col {
-  flex-basis: 31%;
-  background-color: rgb(206, 198, 198);
-  border-radius: 20px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
+.row_img img {
+  height: 130%;
+  padding-right: 1rem;
+  padding-top: 8rem;
 }
 
-.team-col img {
-  border-radius: 30%;
-  width: 100px;
+.row_02 {
+  display: flex;
+  border: 1px solid red;
+}
+
+.row_img01 img {
+  height: 110%;
+  padding-right: 1rem;
+  padding-top: 15rem;
+  padding-left: 2rem;
+}
+
+.row_des_01 h2 {
+  padding-top: 15rem;
+  font-size: 50px;
+  padding-left: 5%;
+}
+
+.row_des_01 h3 {
+  font-size: 30px;
+  padding-left: 5%;
+}
+
+.row_des_01 p {
+  padding-top: 1rem;
+  padding-right: 2rem;
+  font-size: 20px;
+  padding-left: 5%;
 }
 
 .define-product {
