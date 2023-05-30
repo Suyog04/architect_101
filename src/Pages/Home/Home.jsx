@@ -1,100 +1,64 @@
-import React from "react";
-import blueprint from "../../Assets/blueprint.jpeg";
-import Footer from "../footer/Footer";
+
+import logo from '../../Assets/logo.png'
+import vid from '../../Assets/VID.mp4'
+
 import "./Home.css";
-import logo from "../../Assets/logo.png";
-import image from "../../Assets/images.jpeg";
+import NavBar from "../../Components/NavBar/NavBar";
+import Footer from '../../Components/footer/Footer'
 
 const Home = () => {
+  const team = [
+    {
+      'id': 1,
+      'image': require('../../Assets/images.jpeg'),
+      'name': 'Ayush Bista',
+      'position': 'architect',
+      'description': "Michael has a wealth of knowledge when it comes to design. With a BA (Hons) degree in Architecture and 6 years in the bespokeKitchen design Industry he is able to combine the two in order tovisualise space and bring your requirements to life."
+    },
+    {
+      'id': 1,
+      'image': require('../../Assets/images.jpeg'),
+      'name': 'Ayush Bista',
+      'position': 'architect',
+      'description': "Michael has a wealth of knowledge when it comes to design. With a BA (Hons) degree in Architecture and 6 years in the bespokeKitchen design Industry he is able to combine the two in order tovisualise space and bring your requirements to life."
+    }
+  ]
+
   return (
     <>
-      <section className="main-container">
-        <ul className="nav1">
-          <li className="navitem">
-            <a className="navlink" href="/">
-              Home
-            </a>
-          </li>
-          <li className="navitem">
-            <a className="navlink" href="/projects">
-              Projects
-            </a>
-          </li>
-          <li className="navitem">
-            <a className="navlink" href="/aboutus">
-              About Us
-            </a>
-          </li>
-          <li className="navitem">
-            <a className="navlink" href="/blog">
-              Blog
-            </a>
-          </li>
-        </ul>
-        <div className="logo">
+
+      <section className = "hero">
+        <NavBar />
+      <div className="logo">
           <img src={logo} alt="logo" />
         </div>
-        <div className="home-heading">
+        <div className="heading">
           <h1>Best architecture in Nepal.</h1>
           <h2>Team of talented people.</h2>
         </div>
       </section>
 
+      <section className = "video">
+      <div className="video-container">
+          <video src={vid} autoPlay muted loop />
+        </div>
+      </section>
+      
       <section className="teams">
-        <h1>Our Team</h1>
-        <div className="team item-1">
-          <div className="team-info">
-            <h2>Ayush Bista</h2>
-            <h3>Architecture</h3>
-            <p>
-              Michael has a wealth of knowledge when it comes to design. With a
-              BA (Hons) degree in Architecture and 6 years in the bespoke
-              Kitchen design Industry he is able to combine the two in order to
-              visualise space and bring your requirements to life. He is also
-              trained in Interior Design and currently studying a part time MA
-              in Interior Design, With this in mind, he is able to utilise all
-              these skills in order to ensure each and every design created will
-              be unique and tailored directly to you.
-            </p>
-          </div>
-           <img className="image" src={image} alt="person" />
+      <h1>Our Teams</h1>
+      <div className="team-container">
+      {team.map((member) => (
+        <div className="profile-card" key={member.id}>
+          <img src={member.image} alt={member.name} className="profile-image" />
+          <h3 className="profile-name">{member.name}</h3>
+          <p className="profile-position">{member.position}</p>
+          <p className="profile-description">{member.description}</p>
         </div>
-
-        <div className="team item-2">
-          <img className="image" src={image} alt="person" />
-          <div className="team-info">            
-            <h2>Ayush Bista</h2>
-            <h3>Architecture</h3>
-            <p>
-              Michael has a wealth of knowledge when it comes to design. With a
-              BA (Hons) degree in Architecture and 6 years in the bespoke
-              Kitchen design Industry he is able to combine the two in order to
-              visualise space and bring your requirements to life. He is also
-              trained in Interior Design and currently studying a part time MA
-              in Interior Design, With this in mind, he is able to utilise all
-              these skills in order to ensure each and every design created will
-              be unique and tailored directly to you.
-            </p>
-          </div>
-        </div>
+      ))}
+    </div>
       </section>
 
-      <section className="define-product">
-        <div className="product-heading">
-          <h1>Crafting with cure.</h1>
-          <br />
-          <h2>Creative. Innovation. Balanced.</h2>
-          <br />
-          <p>
-            The unique architect with ideas from outside the world. The new
-            level of evolution.
-          </p>
-        </div>
-        <div className="product-design">
-          <img src={blueprint} alt="blueprint" />
-        </div>
-      </section>
-      <Footer />
+      <Footer /> 
     </>
   );
 };
