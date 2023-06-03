@@ -4,7 +4,6 @@ body {
 
 
 .hero {
-
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,7 +12,6 @@ body {
   background-image: url("../../Assets/architecture.jpeg");
   background-size: cover;
   background-position: center;
-
 }
 
 .hero .navbar {
