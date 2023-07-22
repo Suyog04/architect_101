@@ -23,28 +23,29 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="social-media">
+      <div className="logo-footer">
+        <div className="logo-container">
+          <div className="logo">
+            <a href="/">
+              <img src={logo} alt="logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="contact-and-hours">
         <div className="contact">
           <h2>Contact Us</h2>
           <a href="https://goo.gl/maps/zSbcF1p4okhpQGuy8">Kupondole</a>
           <p>+977-985-1279621</p>
         </div>
+      </div>
 
-        <div className="logo-footer">
-          <div className="logo">
-            <a href="/"> <img src={logo} alt="logo" /></a>
-          </div>
-          <div className="link">
-            <a href="https://www.facebook.com/brickarchitectsandengineers"><FiFacebook /></a>
-            <a href="mailto: brickane@gmail.com"><FiMail /></a>
-            <a href="https://www.instagram.com/brickarchitects_engineers/?igshid=YmMyMTA2M2Y%3D"><FiInstagram /></a>
-          </div>
-        </div>
-
-        <div className='work-hour'>
-          <h1>Working Hour</h1>
-          <p>Monday-Friday</p>
-          <p>8:00 am - 12:00 am</p>
+      <div className="social-media">
+        <div className="link">
+          <a href="https://www.facebook.com/brickarchitectsandengineers"><FiFacebook /></a>
+          <a href="mailto: brickane@gmail.com"><FiMail /></a>
+          <a href="https://www.instagram.com/brickarchitects_engineers/?igshid=YmMyMTA2M2Y%3D"><FiInstagram /></a>
         </div>
       </div>
 

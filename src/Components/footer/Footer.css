@@ -1,11 +1,12 @@
+/* Base styles for larger screens */
 .footer {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  padding: 20px;
+  padding: 10px;
 }
 
 .nav-bar {
@@ -21,11 +22,13 @@
 
 .footer-navbar a {
   text-decoration: none;
+  font-size: 4rem;
+  color: #e1d9cf;
 }
-
 
 .footer-navitem {
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .social-media {
@@ -33,37 +36,67 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1rem; /* Adjust the gap for smaller screens */
+  color: #e1d9cf;
 }
 
 .contact {
-  text-align: left;
+  text-align: center;
+  color:#e1d9cf;
 }
 
-.contact a{
+.contact a {
   text-decoration: none;
+  color: #e1d9cf;
 }
 
 .logo-footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
-.logo img{
-  width:10%;
-  height:auto;
+.logo-container {
+  width: 150px;
+  height: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .link {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
-.work-hour {
-  text-align: right;
+.social-media .link a {
+  color: #e1d9cf;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
+
+.contact-and-hours{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 
 .copy-right {
   text-align: center;
+  color: #e1d9cf;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .contact-and-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
