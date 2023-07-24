@@ -1,6 +1,6 @@
 import React from 'react'
 import './Projects.css'
-import Footer from '../footer/Footer'
+import Footer from '../../Components/footer/Footer'
 import { useNavigate } from "react-router-dom";
 
 
