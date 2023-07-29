@@ -7,12 +7,12 @@ const AboutUs = () => {
   const aboutus_content = [
     {
       id: 1,
-      p: "Every kitchen we design, manufacture and install is handmade by expert cabinet makers and installed by artisan joiners with a real passion for their craft. We are a small team. We are driven and determined, with many years’ combined experience in the kitchen industry. Working with you, we combine original, inventive, innovative and individual designs with meticulous craftsmanship, exceptional quality and attention to detail.",
+      p: "Every kitchen we design, manufacture and install is handmade by expert cabinet makers and installed by artisan joiners with a real passion for their craft. We are a small team. We are driven and determined, with many years’ combined experience in the kitchen industry.",
       image: require("../../Assets/about-content.jpeg"),
     },
     {
-      id: "2",
-      p: "We keep you in the loop, informed, involved and up-to-date.\n\nWe make it easy. Everything is designed around you and your home.\n\nWe don’t have a showroom or a sales team. We simply bring everything to you. Presentations can be done in your home to suit you. We plan everything to suit your availability.\n\nOur approach is collaborative and hands-on, we listen and love to create a kitchen that truly reflects your life and lifestyle.",
+      id: 2,
+      p: "We keep you in the loop, informed, involved and up-to-date.We make it easy. Everything is designed around you and your home.We don’t have a showroom or a sales team. We simply bring everything to you. Presentations can be done in your home to suit you.",
       image: require("../../Assets/about_01.png"),
     },
   ];
@@ -28,21 +28,14 @@ const AboutUs = () => {
       <section className="about-description">
         <div className="aboutus-content">
           {aboutus_content.map((content) => (
-            <div className="content-description_1" key={content.id}>
-              {content.id === "1" && (
-                <>
-                  <img src={content.image} alt="" />
-                  <p>{content.p}</p>
-                </>
-              )}
-              <div className="content-description_2" key={content.id}>
-                {content.id === "2" && (
-                  <>
-                    <p>{content.p}</p>
-                    <img src={content.image} alt="" />
-                  </>
-                )}
-              </div>
+            <div
+              className={`content-description ${
+                content.id % 2 === 0 ? "even" : "odd"
+              }`}
+              key={content.id}
+            >
+              <img src={content.image} alt="" />
+              <p>{content.p}</p>
             </div>
           ))}
         </div>
@@ -54,3 +47,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+

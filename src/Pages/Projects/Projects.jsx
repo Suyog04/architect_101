@@ -44,13 +44,14 @@ const Projects = () =>
           <div className = 'team-col_01'>
             <img src = {industrial} alt = "industrial" />
             <div onClick = {() => navigate("/industrial")} className = "layer">
-            <h3>Industrial</h3>
+              <h3>Industrial</h3>
             </div>
           </div>
           <div className = "team-col_01">
             <img src = {interior} alt = "interior_image" />
-            <div onClick = {() => navigate("/interior")} className = "layer" />
-            <h3>Interior</h3>
+            <div onClick = {() => navigate("/interior")} className = "layer" >
+              <h3>Interior</h3>
+            </div>
           </div>
         </div>
         
