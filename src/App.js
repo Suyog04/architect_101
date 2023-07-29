@@ -6,8 +6,7 @@ import Home from "./Pages/Home/Home";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Projects from './Pages/Projects/Projects'
 
-
-
+import Interior from "./Pages/Projects/interior/Interior";
 import Recreational from './Pages/Projects/recreational/Recreational'
 /*import Industrial from './Pages/Projects/industrial/Industrial'
 import Blog from './Pages/Blog/Blog'
@@ -21,7 +20,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/aboutus" element={<AboutUs />} />
           <Route exact path = "/projects" element = {< Projects />} />
-          
+          <Route exact path = "/interior" element={<Interior />} />
           <Route exact path = "/recreational" element = {<Recreational />} />
           {/*<Route exact path = "/commercial" element = {<Commercial />} />
           <Route exact path = "/industrial" element = {<Industrial />} />

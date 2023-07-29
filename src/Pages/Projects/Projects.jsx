@@ -1,15 +1,16 @@
 import React from 'react'
 import './Projects.css'
+
 import Footer from '../../Components/footer/Footer'
+import Navbar from '../../Components/NavBar/NavBar';
+
 import { useNavigate } from "react-router-dom";
 
-
-
-
 // importing images
-import recreational from '../../Assets/recreational.jpeg'
+import recreational from '../../Assets/recreational/recreational.jpeg'
 import commercial from '../../Assets/commercial.jpeg'
 import industrial from '../../Assets/industrial.png'
+import interior from '../../Assets/interior/interior.webp'
 
 const Projects = () => 
 {
@@ -19,20 +20,7 @@ const Projects = () =>
   return (
     <>
       <section className = "main-container_03">
-          <ul className="nav1_03">
-            <li className="navitem_03">
-              <a className="navlink_03" href="/">Home</a>
-            </li>
-            <li className="navitem_03">
-              <a className="navlink_03" href="/projects">Projects</a>
-            </li>
-            <li className="navitem_03">
-              <a className="navlink_03" href="/aboutus">About Us</a>
-            </li>
-            <li className="navitem_03">
-              <a className="navlink_03" href="/blog" >Blog</a>
-            </li>
-          </ul>
+          <Navbar />
         <div className = "home-heading_03">
           <h1>
             Our Projects
@@ -58,6 +46,11 @@ const Projects = () =>
             <div onClick = {() => navigate("/industrial")} className = "layer">
             <h3>Industrial</h3>
             </div>
+          </div>
+          <div className = "team-col_01">
+            <img src = {interior} alt = "interior_image" />
+            <div onClick = {() => navigate("/interior")} className = "layer" />
+            <h3>Interior</h3>
           </div>
         </div>
         

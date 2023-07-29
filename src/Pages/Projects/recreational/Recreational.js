@@ -66,7 +66,7 @@ const Recreational = () => {
   ];
   return (
     <>
-      <section className="main-container_03">
+      <section className="recreational">
         <NavBar />        
         <div className="commercial-heading">Recreational Projects</div>
         <div className="commercial-grid">

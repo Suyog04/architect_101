@@ -30,23 +30,18 @@ const Navbar = () => {
               </a>
             </li>
             <li>
+              <a href="/projects" onClick={() => setToggleMenu(false)}>
+                Projects
+              </a>
+            </li>
+            <li>
               <a href="/aboutus" onClick={() => setToggleMenu(false)}>
-                About
+                About Us
               </a>
             </li>
             <li>
-              <a href="#menu" onClick={() => setToggleMenu(false)}>
-                Menu
-              </a>
-            </li>
-            <li>
-              <a href="#awards" onClick={() => setToggleMenu(false)}>
-                Awards
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={() => setToggleMenu(false)}>
-                Contact
+              <a href="/blog" onClick={() => setToggleMenu(false)}>
+                Blog
               </a>
             </li>
           </ul>
