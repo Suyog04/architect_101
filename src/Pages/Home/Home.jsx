@@ -38,7 +38,7 @@ const Home = () => {
         </div>
         <div className="heading">
           <h1>Best architecture in Nepal.</h1>
-          <h2>Team of talented people.</h2>
+          <h2>Team of talented people</h2>
         </div>
       </section>
 
