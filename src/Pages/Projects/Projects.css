@@ -22,13 +22,13 @@
   background-color: #e1d9cf;
   background-size: cover;
   max-width: 100%;
-  height: 100vh;
+  height: 150vh;
 }
 
 .home-heading_03
 {
   width: 100%;
-  height: 50%;
+  height: 40px;
   font-size: 26px;
   font-family:'Poppins', sans-serif;;
   color: black;
@@ -89,22 +89,37 @@
   width: 100%;
 }
 
-.row_01
-{
+
+.row_01 {
   display: flex;
-  justify-content: space-between;
-  padding-right: 30px;
-  padding-left: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 10rem;
+
 }
 
-.team-col_01
-{
-  flex-basis: 25%;
+/* Style for the first two columns (Recreational and Commercial) */
+.row_01 .top-cols {
+  flex-basis: calc(50% - 160px);  /* Each top column will occupy 50% of the width */
+  display: flex;
+  justify-content: center;
+}
+
+/* Style for the last two columns (Industrial and Interior) */
+.row_01 .bottom-cols {
+  flex-basis: calc(50% - 160px);  /* Each bottom column will occupy 50% of the width */
+  display: flex;
+  justify-content: center;
+}
+
+.team-col_01 {
   border-radius: 10px;
   margin-bottom: 30px;
-  position:relative;
-  overflow: hidden;
-  padding:5px;
+  position: relative;
+
+  padding: 5px;
 }
 
 .team-col_01 img

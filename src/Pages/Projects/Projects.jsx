@@ -27,7 +27,7 @@ const Projects = () =>
           </h1>
         </div>
           <div className='row_01'>
-          <div className='team-col_01'>
+          <div className='team-col_01 top-cols'>
             <img src = {recreational} alt = "recreational" />
             <div onClick = {() => navigate("/recreational")} className = "layer">
               <h3>
@@ -35,19 +35,19 @@ const Projects = () =>
               </h3>
             </div>
           </div>
-          <div className = "team-col_01">
+          <div className = "team-col_01 top-cols">
             <img src = {commercial} alt = "commercial" />
             <div onClick ={() => navigate("/commercial")} className = "layer">
               <h3>Commercial</h3>
             </div>
           </div>
-          <div className = 'team-col_01'>
+          <div className = 'team-col_01 bottom-cols'>
             <img src = {industrial} alt = "industrial" />
             <div onClick = {() => navigate("/industrial")} className = "layer">
               <h3>Industrial</h3>
             </div>
           </div>
-          <div className = "team-col_01">
+          <div className = "team-col_01 bottom-cols">
             <img src = {interior} alt = "interior_image" />
             <div onClick = {() => navigate("/interior")} className = "layer" >
               <h3>Interior</h3>

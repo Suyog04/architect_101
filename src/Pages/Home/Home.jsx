@@ -1,13 +1,32 @@
-import logo from "../../Assets/logo.png";
-import vid from "../../Assets/VID.mp4";
-
+import { useState, useEffect } from "react";
+import { useSpring, animated } from "react-spring";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
-import "./Home.css";
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/footer/Footer";
 
+import logo from "../../Assets/logo.png";
+import vid from "../../Assets/VID.mp4";
+
+import "./Home.css";
+
 const Home = () => {
+  const [scrollOffset, setScrollOffset] = useState(0);
+
+  // Event listener to update scroll offset on scroll
+  const handleScroll = () => {
+    setScrollOffset(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Calculate the translateY value for the parallax effect
+  const parallaxTranslateY = (speed, yOffset) => `translateY(${yOffset * speed}px)`;
   const team = [
     {
       id: 1,
@@ -28,10 +47,21 @@ const Home = () => {
       instagram: "https://www.instagram.com/ayushbista",
     },
   ];
+  const calcParallax = (speed) => (yOffset) => `translateY(${yOffset * speed}px)`;
+
+  const heroSpring = useSpring({
+    to: { transform: calcParallax(0.5) },
+    config: { tension: 150, friction: 26 },
+  });
+
+  const videoSpring = useSpring({
+    to: { transform: calcParallax(0.3) },
+    config: { tension: 150, friction: 26 },
+  });
 
   return (
     <>
-      <section className="hero">
+      <animated.section className="hero" style={heroSpring}>
         <NavBar />
         <div className="logo">
           <img src={logo} alt="logo" />
@@ -40,19 +70,23 @@ const Home = () => {
           <h1>Best architecture in Nepal.</h1>
           <h2>Team of talented people</h2>
         </div>
-      </section>
+      </animated.section>
 
-      <section className="video">
+      <animated.section className="video" style={videoSpring}>
         <div className="video-container">
           <video src={vid} autoPlay muted loop />
         </div>
-      </section>
+      </animated.section>
 
-      <section className="teams">
+      <animated.section className="teams">
         <h1>Our Teams</h1>
         <div className="team-container">
           {team.map((member) => (
-            <div className="profile-card" key={member.id}>
+            <animated.div
+            className="profile-card parallax-layer"
+            key={member.id}
+            style={{ transform: parallaxTranslateY(0.03, -scrollOffset) }}
+          >
               <img
                 src={member.image}
                 alt={member.name}
@@ -61,7 +95,6 @@ const Home = () => {
               <div className="profile-details">
                 <h3 className="profile-name">{member.name}</h3>
                 <p className="profile-position">{member.position}</p>
-                <p className ="profile-description">{member.description}</p>
                 <div className="profile-social-links">
                   {member.facebook && (
                     <a href={member.facebook} target="_blank" rel="noopener noreferrer">
@@ -80,10 +113,10 @@ const Home = () => {
                     )}
                 </div>
               </div>
-            </div>
+            </animated.div>
           ))}
         </div>
-      </section>
+      </animated.section>
 
       <Footer />
     </>
