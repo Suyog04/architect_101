@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FiFacebook, FiMail, FiInstagram } from "react-icons/fi";
-import logo from '../../Assets/logo.png';
+import logo_02 from '../../Assets/logo_02.png';
 
 const Footer = () => {
   return (
@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="logo-container">
           <div className="logo">
             <a href="/">
-              <img src={logo} alt="logo" />
+              <img src={logo_02} alt="logo" />
             </a>
           </div>
         </div>

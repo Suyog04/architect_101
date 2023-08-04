@@ -22,24 +22,29 @@ body {
 }
 
 .hero .navbar a {
-  color: #ffffff;
+  color: #e1d9cf;
   margin-left: 10px;
   text-decoration: none;
 }
 
-.hero .logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+.video{
+  position:relative;
 }
 
-.hero .logo img {
-  width: 150px;
+.video .logo {
+  position: absolute;
+  top: 1px;
+  left: 20px;
+  z-index: 2
+}
+
+.video .logo img {
+  width: 100px;
 }
 
 .hero .heading {
   text-align: center;
-  color: #ffffff;
+  color: #e1d9cf;
 }
 
 .hero .heading h1 {

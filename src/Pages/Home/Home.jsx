@@ -32,16 +32,16 @@ const Home = () => {
       id: 1,
       image: require("../../Assets/teams/ayush.jpeg"),
       name: "Ayush Bista",
-      position: "architect",
+      position: "Architect",
       facebook: "https://www.facebook.com/profile.php?id=100003140337479",
       twitter: "https://www.twitter.com/ayushbista",
       instagram: "https://www.instagram.com/ayushbista",
     },
     {
       id: 2,
-      image: require("../../Assets/teams/ayush.jpeg"),
-      name: "Bruno Thapa",
-      position: "designer",
+      image: require("../../Assets/teams/Utsav.jpg"),
+      name: "Utshav Adhikari",
+      position: "Architect",
       facebook: "https://www.facebook.com/ayush.bista",
       twitter: "https://www.twitter.com/ayushbista",
       instagram: "https://www.instagram.com/ayushbista",
@@ -61,20 +61,21 @@ const Home = () => {
 
   return (
     <>
-      <animated.section className="hero" style={heroSpring}>
-        <NavBar />
-        <div className="logo">
+
+<animated.section className="video" style={videoSpring}>
+      <NavBar />
+      <div className="logo">
           <img src={logo} alt="logo" />
         </div>
+        <div className="video-container">
+          <video src={vid} autoPlay muted loop />
+        </div>
+      </animated.section>
+      <animated.section className="hero" style={heroSpring}>
+        
         <div className="heading">
           <h1>Best architecture in Nepal.</h1>
           <h2>Team of talented people</h2>
-        </div>
-      </animated.section>
-
-      <animated.section className="video" style={videoSpring}>
-        <div className="video-container">
-          <video src={vid} autoPlay muted loop />
         </div>
       </animated.section>
 
