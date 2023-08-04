@@ -66,7 +66,7 @@ const Home = () => {
       <NavBar />
       <div className="logo">
           <img src={logo} alt="logo" />
-        </div>
+      </div>
         <div className="video-container">
           <video src={vid} autoPlay muted loop />
         </div>

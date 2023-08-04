@@ -9,6 +9,8 @@
   gap: 20px;
   padding: 20px;
   background-color: #e1d9cf;
+  max-width: 1200px;
+  margin : 0 auto;
 }
 
 .blog-item {
@@ -17,6 +19,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.2s ease;
+  flex-direction: column;
 }
 
 .blog-item:hover {
@@ -39,6 +42,7 @@
 .blog-item p {
   margin-top: 10px;
   color: #555555;
+  flex-grow:1;
 }
 
 .blog-item button {
@@ -51,6 +55,7 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  margin-top : 10px;
 }
 
 .blog-item button:hover {
