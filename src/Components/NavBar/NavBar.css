@@ -1,85 +1,20 @@
 .navbar {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px;
-  cursor: pointer;
-  height: 100vh;
-}
 
-
-.hamburger-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 1;
-}
-
-
-.overlay__close {
-  position: absolute;
-  top: 30px;
-  right: 30px; 
-  z-index: 1;
-  cursor: pointer;
-}
-
-
-.app__navbar-smallscreen_overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.flex__center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.slide-bottom {
-  animation: slide-bottom 0.4s ease;
-}
-
-
-@keyframes slide-bottom {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-.app__navbar-smallscreen_links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  top: 20px;
+  right: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  width: 120px; /* Adjust width as needed */
+  padding: 20px;
+  z-index: 100; /* Ensure the navbar is on top of other elements */
 }
 
-
-.app__navbar-smallscreen_links li {
-  margin: 10px 0;
-}
-
-
-.app__navbar-smallscreen_links a {
-  color: #e1d9cf;
+.navbar a {
   text-decoration: none;
-  font-size: 40px;
-  align-items: center;
+  margin: 10px 0;
+  color: white;
+  font-family: 'ISOCPeur';
+  font-size: 2rem;
+  font-weight: 400;
 }

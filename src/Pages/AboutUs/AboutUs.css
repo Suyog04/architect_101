@@ -40,6 +40,8 @@
 
   .hero-heading h1{
     font-size: 6rem;
+    font-family: 'ISOCPeur', sans-serif;
+    font-weight: 400;
   }
   
   .navbar {
@@ -76,6 +78,7 @@
     margin-bottom: 10px;
     width: 50%;
     text-align: center;
+    font-family: 'ISOCPeur', sans-serif;
   }
   
   .content-description img {
@@ -143,6 +146,7 @@
 
   .hero-heading h1 {
     font-size: 3rem;
+    
   }
 
   .content-description img {
@@ -151,10 +155,13 @@
 
   .aboutus-content {
     align-items: center;
+    
   }
 
   .content-description p {
     width: 100%;
+    font-family: 'ISOCPeur', sans-serif;
+    font-size: 30px;
   }
 }
 

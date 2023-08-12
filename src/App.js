@@ -14,6 +14,8 @@ import Industrial from './Pages/Projects/industrial/Industrial'
 import BlogList from "./Pages/Blog/Blog";
 import FullBlog from "./Pages/Blog/FullBlog";
 
+
+
 const App = () => {
   return (
     <>

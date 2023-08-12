@@ -8,6 +8,8 @@ import Footer from "../../Components/footer/Footer";
 import logo from "../../Assets/logo.png";
 import vid from "../../Assets/VID.mp4";
 
+import PreLoader from "../../Components/PreLoader/PreLoader";
+
 import "./Home.css";
 
 const Home = () => {
@@ -61,8 +63,8 @@ const Home = () => {
 
   return (
     <>
-
-<animated.section className="video" style={videoSpring}>
+    <PreLoader />
+    <animated.section className="video" style={videoSpring}>
       <NavBar />
       <div className="logo">
           <img src={logo} alt="logo" />
@@ -71,6 +73,7 @@ const Home = () => {
           <video src={vid} autoPlay muted loop />
         </div>
       </animated.section>
+
       <animated.section className="hero" style={heroSpring}>
         
         <div className="heading">
@@ -78,6 +81,14 @@ const Home = () => {
           <h2>Team of talented people</h2>
         </div>
       </animated.section>
+
+      <section className = "home-project">
+        <div className = "project-heading">
+          <h1>
+            Project
+          </h1>
+        </div>
+      </section>
 
       <animated.section className="teams">
         <h1>Our Teams</h1>
