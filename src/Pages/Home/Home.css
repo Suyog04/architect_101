@@ -1,3 +1,4 @@
+
 body {
   overflow-x: hidden;
 }
@@ -158,6 +159,140 @@ body {
 
 .profile-social-links a:hover {
   background-color: #ccc;
+}
+
+.home-project {
+  height: 100vh;
+  background-color: #FAF9F6;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Chivo Mono';
+}
+
+.project-heading {
+  padding: 4rem;
+  text-align: center;
+}
+
+.project-heading_2 {
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin-top: 1rem;
+}
+
+.project-image {
+  width: 50%;
+}
+
+.project-image img {
+  width: 100%;
+  display: block;
+}
+
+.project-details {
+  flex: 1;
+  padding-left: 1.5rem;
+  padding-right:1.5rem;
+}
+
+.project-button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  width: 10rem;
+  height: auto;
+  margin-top: 2rem;
+}
+
+
+.project-button .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #001F3F;
+  border-radius: 1.625rem;
+}
+
+.project-button .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #FAF9F6;
+}
+
+.project-button .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.project-button .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #FAF9F6;
+  border-right: 0.125rem solid #FAF9F6;
+  transform: rotate(45deg);
+}
+
+.project-button .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #001F3F;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-button:hover .circle {
+  width: 100%;
+}
+
+.project-button:hover .icon.arrow {
+  background: #FAF9F6;
+  transform: translate(1rem, 0);
+}
+
+.project-button:hover .button-text {
+  color: #FAF9F6;
+}
+
+
+.project-details p {
+  margin-top: 2rem;
 }
 
 

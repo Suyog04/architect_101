@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useRef } from 'react'
 import './Projects.css'
 
 import Footer from '../../Components/footer/Footer'
@@ -15,11 +15,19 @@ import interior from '../../Assets/interior/interior.webp'
 const Projects = () => 
 {
   const navigate = useNavigate();
+
+  const topRef = useRef(null);
+
+  const handleClick = () => {
+    if (topRef.current) {
+      window.scrollTo({ top: topRef.current.offsetTop, behavior: 'smooth' });
+    }
+  }
   
   
   return (
     <>
-      <section className = "main-container_03">
+      <section className = "main-container_03" ref={topRef}>
           <Navbar />
         <div className = "home-heading_03">
           <h1>
