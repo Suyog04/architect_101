@@ -21,12 +21,21 @@
   justify-content: center;
 }
 
+
+@font-face {
+  font-family:'Chivo Mono' ;
+  src: url('../../Font/chivomono-light-webfont.woff') format('woff'),
+       url('../../Font/chivomono-light-webfont.woff2') format('woff2');
+  font-weight: 200;
+}
+
+
 .footer-navbar a {
   text-decoration: none;
   font-size: 4rem;
   color: #001F3F;
-  font-family: 'ISOCPeur', sans-serif;
-  font-weight: 340;
+  font-family: 'Chivo Mono';
+  font-weight: 400;
 }
 
 .footer-navitem {
@@ -49,14 +58,14 @@
 }
 
 .contact h2{
-  font-family: 'ISOCPeur', sans-serif;
-  font-weight: 400;
+  font-family: 'Chivo Mono';
+  font-weight: 600;
 }
 
 .contact a {
   text-decoration: none;
   color: #001F3F;
-  font-family: 'ISOCPeur', sans-serif;
+  font-family: 'Chivo Mono';
 }
 
 .logo-footer {
@@ -101,7 +110,7 @@
 }
 
 .copy-right p{
-  font-family: 'ISOCPeur', sans-serif;
+  font-family: 'Chivo Mono';
 }
 
 /* Media Queries */

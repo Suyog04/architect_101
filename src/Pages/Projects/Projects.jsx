@@ -1,72 +1,84 @@
-import React,{ useRef } from 'react'
-import './Projects.css'
+import React, { useEffect, useRef } from "react";
+import "./Projects.scss";
 
-import Footer from '../../Components/footer/Footer'
-import Navbar from '../../Components/NavBar/NavBar';
+import useWindowSize from "../../hooks/useWindowSize";
 
-import { useNavigate } from "react-router-dom";
+import images from "./images/images";
 
-// importing images
-import recreational from '../../Assets/recreational/recreational.jpeg'
-import commercial from '../../Assets/commercial.jpeg'
-import industrial from '../../Assets/industrial.png'
-import interior from '../../Assets/interior/interior.webp'
+function App() {
 
-const Projects = () => 
-{
-  const navigate = useNavigate();
+  const size = useWindowSize();
 
-  const topRef = useRef(null);
+  const headingRef = useRef();
+  const main = useRef();
+  const scrollContainer = useRef();
 
-  const handleClick = () => {
-    if (topRef.current) {
-      window.scrollTo({ top: topRef.current.offsetTop, behavior: 'smooth' });
-    }
-  }
+ 
+  const data = {
+    ease: 0.07,
+    current: 0,
+    previous: 0,
+    rounded: 0
+  };
+
+
+  useEffect(() => {
+    requestAnimationFrame(() => skewScrolling());
+  });
+
+
+  useEffect(() => {
+    setBodyHeight();
+  }, [size.height]);
+
+  const setBodyHeight = () => {
+    document.body.style.height = `${
+      scrollContainer.current.getBoundingClientRect().height
+    }px`;
+  };
+
   
-  
+
+  const skewScrolling = () => {
+
+    data.current = window.scrollY;
+ 
+    data.previous += (data.current - data.previous) * data.ease;
+
+    data.rounded = Math.round(data.previous * 100) / 100;
+
+
+    const difference = data.current - data.rounded;
+    const acceleration = difference / size.width;
+    const velocity = +acceleration;
+    const skew = velocity * 7.5;
+
+   
+    scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
+    headingRef.current.style.transform = `translateY(-${data.rounded * 0.3}px)`;
+
+    requestAnimationFrame(() => skewScrolling());
+  };
+
   return (
     <>
-      <section className = "main-container_03" ref={topRef}>
-          <Navbar />
-        <div className = "home-heading_03">
-          <h1>
-            Our Projects
-          </h1>
+      <h1 ref = {headingRef} className = "project-heading1">Our Projects</h1>
+      <div ref={main} className="project-main">
+        <div ref={scrollContainer} className="scroll">
+          {images.map((image, index) => (
+            <>
+              <div key={index} className="img-container">
+                <img src={image} alt={`people ${index}`} />
+              </div>
+              <h2 className = "content-heading2">
+                Project <span className="outline">Number</span>
+              </h2>
+            </>
+          ))}
         </div>
-          <div className='row_01'>
-          <div className='team-col_01 top-cols'>
-            <img src = {recreational} alt = "recreational" />
-            <div onClick = {() => navigate("/recreational")} className = "layer">
-              <h3>
-                Recreational
-              </h3>
-            </div>
-          </div>
-          <div className = "team-col_01 top-cols">
-            <img src = {commercial} alt = "commercial" />
-            <div onClick ={() => navigate("/commercial")} className = "layer">
-              <h3>Commercial</h3>
-            </div>
-          </div>
-          <div className = 'team-col_01 bottom-cols'>
-            <img src = {industrial} alt = "industrial" />
-            <div onClick = {() => navigate("/industrial")} className = "layer">
-              <h3>Industrial</h3>
-            </div>
-          </div>
-          <div className = "team-col_01 bottom-cols">
-            <img src = {interior} alt = "interior_image" />
-            <div onClick = {() => navigate("/interior")} className = "layer" >
-              <h3>Interior</h3>
-            </div>
-          </div>
-        </div>
-        
-      </section>
-      <Footer />
+      </div>
     </>
-  )
+  );
 }
 
-export default Projects
+export default App;
