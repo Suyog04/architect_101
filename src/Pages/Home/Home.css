@@ -1,13 +1,39 @@
 
-body {
-  overflow-x: hidden;
-}
+
+
 
 @font-face {
-  font-family:'Chivo Mono' ;
+  font-family: 'Chivo Mono';
   src: url('../../Font/chivomono-light-webfont.woff') format('woff'),
        url('../../Font/chivomono-light-webfont.woff2') format('woff2');
   font-weight: 200;
+}
+
+.home-heading {
+ 
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -35vh;
+}
+
+
+.home-heading h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 3rem;
+  font-family: 'Chivo Mono';
+}
+
+.home-heading h2{
+  font-size: 2.5rem;
+}
+
+
+.home-container{
+  padding-top: 30em;
+  padding-bottom: 11em;
+  padding-left: 2.5em;
+  font-family: "Chivo Mono";
 }
 
 .hero {
@@ -16,7 +42,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../Assets/architecture.jpeg");
+  background-image: url("../../Assets/recreational/recreational_04.jpeg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -30,59 +56,42 @@ body {
 }
 
 .hero .navbar a {
-  color: #e1d9cf;
+  color: #001F3F;
   margin-left: 10px;
   text-decoration: none;
 }
 
-.video{
-  position:relative;
-}
 
-.video .logo {
+.logo {
   position: absolute;
   top: 1px;
   left: 20px;
   z-index: 2
 }
 
-.video .logo img {
-  width: 100px;
+.logo img {
+  width: 80px;
 }
 
 .hero .heading {
   text-align: center;
-  color: #e1d9cf;
+  color: whitesmoke;
 }
 
 .hero .heading h1 {
-  font-size: 80px;
+  font-size: 40px;
   font-family:'Chivo Mono';
   margin-bottom: 10px;
+  color:#e5dada;
+
 }
 
 .hero .heading h2 {
   font-size: 18px;
-  color: #FAF9F6;  
+  color: grey;  
   font-family:'Chivo Mono';
 }
 
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-}
-
-.video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .teams {
   text-align: center;
@@ -99,7 +108,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 57px;
 }
 
 .profile-card {
@@ -136,12 +145,12 @@ body {
 .profile-card .profile-position {
   font-size: 16px;
   color: #888888;
+  font-family: "Chivo Mono";
 }
 
 .profile-social-links {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
 }
 
 .profile-social-links a {
@@ -163,7 +172,7 @@ body {
 
 .home-project {
   height: 100vh;
-  background-color: #FAF9F6;
+  background-color: #FFFFF7;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -171,8 +180,12 @@ body {
 }
 
 .project-heading {
-  padding: 4rem;
+  padding: 1rem;
   text-align: center;
+}
+
+.project-heading h1{
+  font-size: 3rem;
 }
 
 .project-heading_2 {
@@ -296,6 +309,7 @@ body {
 }
 
 
+
 @media (max-width: 768px) {
   body{
     overflow-x: hidden;
@@ -310,16 +324,74 @@ body {
     font-size: 14px; 
     font-family:'Chivo Mono';
   }
+  
 
-  .video-container {
-    padding-bottom: 75%;
-    height: 100vh;
+  .home-container {
+    padding-top: 23em; 
+    padding-bottom: 6em; 
+    padding-left: 1.5em; 
+    padding-right: 1.5em; 
+    font-family: "Chivo Mono";
   }
+  .home-container h1{
+    font-size: 3rem;
+  }
+
+  .home-container h2{
+    font-size: 1rem;
+  }
+
+.home-project {
+  height: 130vh;
+  background-color: #FFFFF7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Chivo Mono';
+}
+
+.project-heading {
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-heading h1 {
+  font-size: 3rem;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+.project-image img {
+  width: 100%;
+  display: block;
+}
+
+.project-details {
+  text-align: center;
+  padding: 1rem;
+}
+
+.project-button {
+  width: 8rem;
+}
+
 
   .team-container {
     flex-direction: column; 
     align-items: center; 
-    margin-top: 10px; 
+    margin-top: 5rem; 
   }
 
   .profile-card {

@@ -25,7 +25,7 @@ const Footer = () => {
 
       <div className="logo-footer">
         <div className="logo-container">
-          <div className="logo">
+          <div className="logo-footer_01">
             <a href="/">
               <img src={logo} alt="logo" />
             </a>
