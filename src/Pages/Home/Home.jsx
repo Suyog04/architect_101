@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/footer/Footer";
@@ -8,10 +9,21 @@ import Footer from "../../Components/footer/Footer";
 import logo from "../../Assets/logo.png";
 import vid from "../../Assets/VID.mp4";
 
+import PreLoader from "../../Components/PreLoader/PreLoader";
+
+import project from '../../Assets/recreational/recreational_09.jpeg'
+
 import "./Home.css";
 
 const Home = () => {
   const [scrollOffset, setScrollOffset] = useState(0);
+  const navigate = useNavigate();
+
+  const handleClick = (e) =>
+  {
+    e.preventDefault()
+    navigate('/projects', { replace: true, preventScroll: true });
+  }
 
   // Event listener to update scroll offset on scroll
   const handleScroll = () => {
@@ -59,10 +71,12 @@ const Home = () => {
     config: { tension: 150, friction: 26 },
   });
 
+  
+
   return (
     <>
-
-<animated.section className="video" style={videoSpring}>
+    <PreLoader />
+    <animated.section className="video" style={videoSpring}>
       <NavBar />
       <div className="logo">
           <img src={logo} alt="logo" />
@@ -71,6 +85,7 @@ const Home = () => {
           <video src={vid} autoPlay muted loop />
         </div>
       </animated.section>
+      <div className="hero-container">
       <animated.section className="hero" style={heroSpring}>
         
         <div className="heading">
@@ -78,6 +93,32 @@ const Home = () => {
           <h2>Team of talented people</h2>
         </div>
       </animated.section>
+      </div>
+
+      <section className="home-project">
+  <div className="project-heading">
+    <h1>Our Project</h1>
+  </div>
+  <div className="project-content">
+    <div className="project-image">
+      <img src={project} alt="Project Image" />
+    </div>
+    <div className="project-details">
+      <h2>Designing with balance and care</h2>
+      <p>We approach architectural design as a process of managing competing interests: finding balance between program and cost, performance and appearance, feasibility and schedule, ambition and pragmatism.</p>
+      <div id = "container">
+          <button className="project-button" onClick = {handleClick}>
+            <span className="circle" aria-hidden="true">
+              <span className="icon arrow"></span>
+            </span>
+            <span className="button-text">View More</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+</section>
+
 
       <animated.section className="teams">
         <h1>Our Teams</h1>

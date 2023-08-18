@@ -1,5 +1,13 @@
+
 body {
   overflow-x: hidden;
+}
+
+@font-face {
+  font-family:'Chivo Mono' ;
+  src: url('../../Font/chivomono-light-webfont.woff') format('woff'),
+       url('../../Font/chivomono-light-webfont.woff2') format('woff2');
+  font-weight: 200;
 }
 
 .hero {
@@ -48,14 +56,15 @@ body {
 }
 
 .hero .heading h1 {
-  font-size: 100px;
-  font-weight: bold;
+  font-size: 80px;
+  font-family:'Chivo Mono';
   margin-bottom: 10px;
 }
 
 .hero .heading h2 {
   font-size: 18px;
-  color: #cccccc;
+  color: #FAF9F6;  
+  font-family:'Chivo Mono';
 }
 
 .video-container {
@@ -83,14 +92,14 @@ body {
 
 .teams h1 {
   font-size: 28px;
-  font-weight: bold;
+  font-family:'Chivo Mono';
 }
 
 .team-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .profile-card {
@@ -98,13 +107,13 @@ body {
   margin: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  overflow: hidden; /* Added overflow hidden for parallax effect */
+  background-color: #FAF9F6;
+  overflow: hidden; 
 }
 
 .profile-card .profile-image {
   width: 100%;
-  height: 75%; /* Set an appropriate height for the profile image */
+  height: 70%; 
   object-fit: cover;
 }
 
@@ -121,6 +130,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
+  font-family:'Chivo Mono';
 }
 
 .profile-card .profile-position {
@@ -143,7 +153,7 @@ body {
   border-radius: 50%;
   background-color: #e1d9cf;
   margin: 4px;
-  color: #fff;
+  color: #FAF9F6;
   text-decoration: none;
 }
 
@@ -151,29 +161,165 @@ body {
   background-color: #ccc;
 }
 
-/* Media Queries for Mobile Devices */
+.home-project {
+  height: 100vh;
+  background-color: #FAF9F6;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Chivo Mono';
+}
+
+.project-heading {
+  padding: 4rem;
+  text-align: center;
+}
+
+.project-heading_2 {
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin-top: 1rem;
+}
+
+.project-image {
+  width: 50%;
+}
+
+.project-image img {
+  width: 100%;
+  display: block;
+}
+
+.project-details {
+  flex: 1;
+  padding-left: 1.5rem;
+  padding-right:1.5rem;
+}
+
+.project-button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  width: 10rem;
+  height: auto;
+  margin-top: 2rem;
+}
+
+
+.project-button .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #001F3F;
+  border-radius: 1.625rem;
+}
+
+.project-button .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #FAF9F6;
+}
+
+.project-button .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.project-button .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #FAF9F6;
+  border-right: 0.125rem solid #FAF9F6;
+  transform: rotate(45deg);
+}
+
+.project-button .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #001F3F;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-button:hover .circle {
+  width: 100%;
+}
+
+.project-button:hover .icon.arrow {
+  background: #FAF9F6;
+  transform: translate(1rem, 0);
+}
+
+.project-button:hover .button-text {
+  color: #FAF9F6;
+}
+
+
+.project-details p {
+  margin-top: 2rem;
+}
+
+
 @media (max-width: 768px) {
   body{
     overflow-x: hidden;
   }
 
   .hero .heading h1 {
-    font-size: 48px; /* Adjust font size for smaller screens */
+    font-size: 48px; 
+    font-family:'Chivo Mono';
   }
 
   .hero .heading h2 {
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 14px; 
+    font-family:'Chivo Mono';
   }
 
   .video-container {
     padding-bottom: 75%;
-    height: calc(100vh - 200px);
+    height: 100vh;
   }
 
   .team-container {
-    flex-direction: column; /* Change the direction to stack the profile cards */
-    align-items: center; /* Center the profile cards */
-    margin-top: 10px; /* Adjust margin for smaller screens */
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 10px; 
   }
 
   .profile-card {
