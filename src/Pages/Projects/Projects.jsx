@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, {useState, useEffect, useRef } from "react";
 import "./Projects.scss";
 
 import useWindowSize from "../../hooks/useWindowSize";
 
 import images from "./images/images";
 
-function App() {
+function Projects() {
 
   const size = useWindowSize();
 
@@ -68,7 +68,7 @@ function App() {
           {images.map((image, index) => (
             <>
               <div key={index} className="img-container">
-                <img src={image} alt={`people ${index}`} />
+                <img src={image.img} alt={`people ${index}`} />
               </div>
               <h2 className = "content-heading2">
                 Project <span className="outline">Number</span>
@@ -81,4 +81,4 @@ function App() {
   );
 }
 
-export default App;
+export default Projects;

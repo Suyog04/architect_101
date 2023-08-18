@@ -7,7 +7,7 @@ import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/footer/Footer";
 
 import logo from "../../Assets/logo.png";
-import vid from "../../Assets/VID.mp4";
+
 
 import PreLoader from "../../Components/PreLoader/PreLoader";
 
@@ -18,12 +18,6 @@ import "./Home.css";
 const Home = () => {
   const [scrollOffset, setScrollOffset] = useState(0);
   const navigate = useNavigate();
-
-  const handleClick = (e) =>
-  {
-    e.preventDefault()
-    navigate('/projects', { replace: true, preventScroll: true });
-  }
 
   // Event listener to update scroll offset on scroll
   const handleScroll = () => {
@@ -76,15 +70,17 @@ const Home = () => {
   return (
     <>
     <PreLoader />
-    <animated.section className="video" style={videoSpring}>
-      <NavBar />
+    <animated.section className="home-heading" style={videoSpring}>
+      
       <div className="logo">
           <img src={logo} alt="logo" />
       </div>
-        <div className="video-container">
-          <video src={vid} autoPlay muted loop />
+        <div className="home-container">
+          <h1>Elevate your escape</h1>
+          <h2>Your discovery experience starts here.</h2>
         </div>
-      </animated.section>
+    </animated.section>
+
       <div className="hero-container">
       <animated.section className="hero" style={heroSpring}>
         
@@ -107,11 +103,14 @@ const Home = () => {
       <h2>Designing with balance and care</h2>
       <p>We approach architectural design as a process of managing competing interests: finding balance between program and cost, performance and appearance, feasibility and schedule, ambition and pragmatism.</p>
       <div id = "container">
-          <button className="project-button" onClick = {handleClick}>
+          <button className="project-button">
+            <a href = "/projects">
             <span className="circle" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>
+            
             <span className="button-text">View More</span>
+            </a>
           </button>
         </div>
       </div>

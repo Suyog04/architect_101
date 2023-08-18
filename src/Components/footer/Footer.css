@@ -81,7 +81,7 @@
   height: 200px;
 }
 
-.logo img {
+.logo-footer_01 img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -100,7 +100,6 @@
 
 .contact-and-hours{
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 
@@ -111,6 +110,7 @@
 
 .copy-right p{
   font-family: 'Chivo Mono';
+  text-align: center;
 }
 
 /* Media Queries */
