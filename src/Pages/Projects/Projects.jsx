@@ -15,7 +15,7 @@ function Projects() {
 
  
   const data = {
-    ease: 0.07,
+    ease: 0.06,
     current: 0,
     previous: 0,
     rounded: 0
