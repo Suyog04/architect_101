@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import { BsFillArrowUpRightCircleFill } from 'react-icons/bs';
+import images_01 from '../../Assets/recreational/recreational_12.jpeg'
 
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/footer/Footer";
@@ -75,13 +77,31 @@ const Home = () => {
       <div className="logo">
           <img src={logo} alt="logo" />
       </div>
-        <div className="home-container">
-          <h1>Elevate your escape</h1>
-          <h2>Your discovery experience starts here.</h2>
+      <div className="heading_01">
+          <h2>Brick Architecture</h2>
+          <h2 style={{ margin: '0.5rem 0' }}>And Engineers</h2>
         </div>
+        <div className="main-image">
+          <img src={images_01}  />
+          <button className="arrow-button">
+            <a href = "/projects">
+              <BsFillArrowUpRightCircleFill className="icon" />
+              </a>
+          </button>
+        </div>
+        <div className="left-quote">
+            <p>EVERY AGE HAS ITS </p>
+            <p>WONDERS, BUT OURS IS </p>
+            <p>THE AGE OF ARCHITECTURE</p>
+        </div>
+        <div className="right-quote">
+            <p>WE CREATE PLACES </p>
+            <p>THAT DESERVE TO </p>
+            <p>BE CALLED HOME</p>
+          </div>
     </animated.section>
 
-      <div className="hero-container">
+     
       <animated.section className="hero" style={heroSpring}>
         
         <div className="heading">
@@ -89,7 +109,6 @@ const Home = () => {
           <h2>Team of talented people</h2>
         </div>
       </animated.section>
-      </div>
 
       <section className="home-project">
   <div className="project-heading">
@@ -97,7 +116,7 @@ const Home = () => {
   </div>
   <div className="project-content">
     <div className="project-image">
-      <img src={project} alt="Project Image" />
+      <img src={project} />
     </div>
     <div className="project-details">
       <h2>Designing with balance and care</h2>
