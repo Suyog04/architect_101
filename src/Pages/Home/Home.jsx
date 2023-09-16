@@ -77,27 +77,30 @@ const Home = () => {
       <div className="logo">
           <img src={logo} alt="logo" />
       </div>
-      <div className="heading_01">
-          <h2>Brick Architecture</h2>
-          <h2 style={{ margin: '0.5rem 0' }}>And Engineers</h2>
-        </div>
+        <div className="heading_01">
+          <p><h2>Brick Architecture</h2>
+            <h2 style={{ margin: '0.5rem 0' }}>And Engineers</h2></p>
+            
+          </div>
         <div className="main-image">
+        <div className="acont">
           <img src={images_01}  />
+          <button className="resp-btn">
+            View Projects
+          </button>
           <button className="arrow-button">
             <a href = "/projects">
               <BsFillArrowUpRightCircleFill className="icon" />
               </a>
+              
           </button>
         </div>
+        </div>
         <div className="left-quote">
-            <p>EVERY AGE HAS ITS </p>
-            <p>WONDERS, BUT OURS IS </p>
-            <p>THE AGE OF ARCHITECTURE</p>
+            <p>EVERY AGE HAS ITS  WONDERS, BUT OURS IS THE AGE OF ARCHITECTURE</p>
         </div>
         <div className="right-quote">
-            <p>WE CREATE PLACES </p>
-            <p>THAT DESERVE TO </p>
-            <p>BE CALLED HOME</p>
+            <p>WE CREATE PLACES THAT DESERVE TO BE CALLED HOME</p>
           </div>
     </animated.section>
 
