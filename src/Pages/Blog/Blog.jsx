@@ -3,7 +3,7 @@ import "./Blog.css";
 import { Link } from "react-router-dom";
 
 
-// import Navbar from "../../Components/NavBar/NavBar";
+import Navbar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/footer/Footer";
 
 import soiling from './Images/soling.jpeg'
@@ -39,8 +39,14 @@ const BlogList = () => {
   ]
   return (
     <>
-    <div className="blog-list">
+    <Navbar />
+    <div className = "parent-blog">
+    <div className = "blog-heading">
       <h1>Blog</h1>
+    </div>
+    </div>
+      <div className="blog-list">
+      
       {blogData.map((blog) => (
         <div className="blog-item" key={blog.id}>
           <h2>{blog.title}</h2>

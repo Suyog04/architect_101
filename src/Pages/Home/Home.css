@@ -33,13 +33,13 @@
   text-align: center;
   color:black;
   font-family: "Chivo Mono";
-  margin: 50px auto;
+  margin: 10px auto;
   position: relative;
   z-index: 1;
   margin-bottom: 1rem;
   font-size:5.5rem;
 }
-.heading_01>p
+.heading_01 h2
 {
   margin-left: 8%;
 }
@@ -50,11 +50,11 @@
   top:45%;
   left: 0;
   z-index: 2;
-  /* margin-top: 5%; */
 }
 .main-image img{
   width: 50%;
   margin: 0 auto;
+  margin-top: 1rem;
   border-radius: 50rem 20rem;   
 }
 .acont
@@ -73,7 +73,7 @@
   position: absolute;
   top: 10%;
   right: 15%; 
-  transform: translate(0, -50%);
+
   z-index: 2;
 }
 
@@ -136,13 +136,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5 for semi-transparency) and color as needed */
+  background-color: rgba(0, 0, 0, 0.5); 
 }
-
-
-
-
-
 
 
 .hero .heading {
@@ -154,13 +149,13 @@
   font-size: 40px;
   font-family:'Chivo Mono';
   margin-bottom: 10px;
-  color:#fff;
+  color:#e1d9cf;
 
 }
 
 .hero .heading h2 {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.654);  
+  color: #e1d9cf;  
   font-family:'Chivo Mono';
 }
 
@@ -467,6 +462,7 @@
   }
   .heading_01 h2 {
     font-size: 11vw;
+    margin-top:9rem;
   }
   .heading_01
   {

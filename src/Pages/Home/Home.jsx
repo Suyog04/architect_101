@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { BsFillArrowUpRightCircleFill } from 'react-icons/bs';
 import images_01 from '../../Assets/recreational/recreational_12.jpeg'
@@ -42,16 +42,16 @@ const Home = () => {
       name: "Ayush Bista",
       position: "Architect",
       facebook: "https://www.facebook.com/profile.php?id=100003140337479",
-      twitter: "https://www.twitter.com/ayushbista",
+      linkedin: "https://www.twitter.com/ayushbista",
       instagram: "https://www.instagram.com/ayushbista",
     },
     {
       id: 2,
       image: require("../../Assets/teams/Utsav.jpg"),
-      name: "Utshav Adhikari",
+      name: "Utsav Adhikari",
       position: "Architect",
       facebook: "https://www.facebook.com/ayush.bista",
-      twitter: "https://www.twitter.com/ayushbista",
+      linkedin: "https://www.twitter.com/ayushbista",
       instagram: "https://www.instagram.com/ayushbista",
     },
   ];
@@ -71,6 +71,7 @@ const Home = () => {
 
   return (
     <>
+    <NavBar />
     <PreLoader />
     <animated.section className="home-heading" style={videoSpring}>
       
@@ -78,8 +79,8 @@ const Home = () => {
           <img src={logo} alt="logo" />
       </div>
         <div className="heading_01">
-          <p><h2>Brick Architecture</h2>
-            <h2 style={{ margin: '0.5rem 0' }}>And Engineers</h2></p>
+          <h2>Brick Architects </h2>
+            <h2 style={{ margin: '0.5rem 0' }}>& Engineers</h2>
             
           </div>
         <div className="main-image">
@@ -164,9 +165,9 @@ const Home = () => {
                     <FaFacebook size={24} />
                     </a>
                   )}
-                  {member.twitter && (
-                    <a href={member.twitter} target="_blank" rel="noopener noreferrer">
-                    <FaTwitter size={24} />
+                  {member.linkedin && (
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin size={24} />
                     </a>
                   )}
                   {member.instagram && (
