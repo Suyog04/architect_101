@@ -118,6 +118,8 @@
   .about-us {
     background-size: contain;
     align-items: flex-start;
+    background-repeat:no-repeat;
+    height:100vh;
   }
 
   .about-us::before {

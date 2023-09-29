@@ -5,7 +5,21 @@ import useWindowSize from "../../hooks/useWindowSize";
 
 import images from "./images/images";
 
+
+
 function Projects() {
+  const [filter, setFilter] = useState('all'); 
+  const uniqueTitles = [...new Set(images.map(image => image.title))];
+
+  const handleFilterChange = (title) => {
+    console.log('Clicked:', title)
+    setFilter(title); // Update the filter state when a button is clicked
+  };
+  
+  const filteredImages = filter === 'all' 
+    ? images
+    : images.filter(image => image.title === filter); // Filter images based on the selected category
+
 
   const size = useWindowSize();
 
@@ -15,7 +29,7 @@ function Projects() {
 
  
   const data = {
-    ease: 0.07,
+    ease: 0.06,
     current: 0,
     previous: 0,
     rounded: 0
@@ -63,20 +77,31 @@ function Projects() {
   return (
     <>
       <h1 ref = {headingRef} className = "project-heading1">Our Projects</h1>
-      <div ref={main} className="project-main">
-        <div ref={scrollContainer} className="scroll">
-          {images.map((image, index) => (
-            <>
-              <div key={index} className="img-container">
-                <img src={image.img} alt={`people ${index}`} />
+        
+          <div ref={main} className="project-main">
+            <div ref={scrollContainer} className="scroll">
+            <div className="button-container"> 
+            <button className = "projects-button" onClick={() => handleFilterChange('all')}>All</button>
+            {uniqueTitles.map(title => (
+        <button className = "projects-button" key={title} onClick={() => handleFilterChange(title)}>{title}</button>
+      ))}
+          </div>
+          
+            {filteredImages.map((image, i) => (
+              <>
+              <div key={i} className = "img-container">
+                <img src={image.img} alt={image.title} />
               </div>
               <h2 className = "content-heading2">
-                Project <span className="outline">Number</span>
+                    Project <span className="outline">Number</span>
               </h2>
-            </>
-          ))}
-        </div>
-      </div>
+
+              </>
+            ))}
+      
+            </div>
+          </div>
+        
     </>
   );
 }

@@ -1,64 +1,10 @@
-
-
-
-
 @font-face {
   font-family: 'Chivo Mono';
+
   src: url('../../Font/chivomono-light-webfont.woff') format('woff'),
-       url('../../Font/chivomono-light-webfont.woff2') format('woff2');
+       url('../../Font/chivomono-light-webfont.woff2') format('woff2'),
+       url('../../Font/ChivoMono-Bold.woff2') format('woff2');
   font-weight: 200;
-}
-
-.home-heading {
- 
-  height: 100vh;
-  overflow: hidden;
-  margin-top: -35vh;
-}
-
-
-.home-heading h1 {
-  position: relative;
-  z-index: 1;
-  font-size: 3rem;
-  font-family: 'Chivo Mono';
-}
-
-.home-heading h2{
-  font-size: 2.5rem;
-}
-
-
-.home-container{
-  padding-top: 30em;
-  padding-bottom: 11em;
-  padding-left: 2.5em;
-  font-family: "Chivo Mono";
-}
-
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../../Assets/recreational/recreational_04.jpeg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.hero .navbar {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-}
-
-.hero .navbar a {
-  color: #001F3F;
-  margin-left: 10px;
-  text-decoration: none;
 }
 
 
@@ -73,22 +19,143 @@
   width: 80px;
 }
 
+.home-heading {
+  height:105vh;
+  background-color: #FAF9F6;
+
+}
+.heading_01
+{
+  width: 100%;
+  float: right;
+}
+.heading_01 h2{
+  text-align: center;
+  color:black;
+  font-family: "Chivo Mono";
+  margin: 10px auto;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+  font-size:5.5rem;
+}
+.heading_01 h2
+{
+  margin-left: 8%;
+}
+.main-image{
+  width:100%;
+  height: 50vh;
+  position: absolute;
+  top:45%;
+  left: 0;
+  z-index: 2;
+}
+.main-image img{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 50rem 20rem;   
+}
+.acont
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.arrow-button {
+  width: 20%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: 10%;
+  right: 15%; 
+
+  z-index: 2;
+}
+
+.icon {
+  font-size: 10vw; 
+  transition: transform 0.3s;
+  color: #001F3F;
+}
+
+.arrow-button:hover .icon {
+  transform: scale(1.2); 
+}
+
+.arrow-button:focus {
+  outline: none;
+}
+
+.left-quote p {
+  font-family: "Chivo Mono";
+  line-height: 160%;
+  text-align: center;
+}
+
+.right-quote p{
+  font-family:"Chivo Mono";
+  text-align: center;
+  line-height: 160%;
+}
+
+.left-quote{
+  float: left;
+  padding-left: 1rem;
+  width: 15%;
+}
+
+.right-quote{
+  float:right;
+  width: 15%;
+  padding-right: 1rem;
+  margin-top: 15%;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../Assets/recreational/recreational_04.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
 .hero .heading {
   text-align: center;
-  color: whitesmoke;
+
 }
 
 .hero .heading h1 {
   font-size: 40px;
   font-family:'Chivo Mono';
   margin-bottom: 10px;
-  color:#e5dada;
+  color:#e1d9cf;
 
 }
 
 .hero .heading h2 {
   font-size: 18px;
-  color: grey;  
+  color: #e1d9cf;  
   font-family:'Chivo Mono';
 }
 
@@ -108,7 +175,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 57px;
+  margin-top: 5rem;
 }
 
 .profile-card {
@@ -265,7 +332,7 @@
 .project-button .icon.arrow::before {
   position: absolute;
   content: '';
-  top: -0.25rem;
+  top: -0.3rem;
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
@@ -282,7 +349,7 @@
   right: 0;
   bottom: 0;
   padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
+  margin: 0 0 0 3vw;
   color: #001F3F;
   font-weight: 700;
   line-height: 1.6;
@@ -307,9 +374,83 @@
 .project-details p {
   margin-top: 2rem;
 }
+.resp-btn
+{
+  display: none;
+    position: relative;
+    background-color: white;
+    color: black;
+    transform: perspective(1px) translateZ(0);
+}
+.resp-btn::after
+{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:black;
+    transition: all 0.2s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+    transition-property: transform;
+    transition-duration: 0.65s;
+}
+.resp-btn:hover
+{
+    color: white;
+    cursor: pointer;
+}
+.resp-btn:hover::after
+{
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
 
-
-
+@media (max-width: 650px) {
+      .acont img
+      {
+        display: none;
+      }
+      .home-heading
+      {
+        background-image: url("../../Assets/recreational/recreational_12.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .resp-btn
+      {
+        display: block;
+        position: relative;
+        padding: 4% 7%;
+        font-size: 5vw;
+        font-family:'Chivo Mono';
+        font-weight: 600;
+        outline: none;
+        border: none;
+        margin-top: 15%;
+      }
+      .arrow-button
+      {
+        right: 13%;
+        top:50%;
+      }
+}
+@media (max-width: 1050px) {
+  .main-image{
+    margin-top: 7%;
+  }
+  .heading_01
+  {
+    margin-bottom: 2%;
+  }
+  .home-heading
+  {
+    height: 100vh;
+  }
+}
 @media (max-width: 768px) {
   body{
     overflow-x: hidden;
@@ -319,7 +460,26 @@
     font-size: 48px; 
     font-family:'Chivo Mono';
   }
-
+  .heading_01 h2 {
+    font-size: 11vw;
+    margin-top:9rem;
+  }
+  .heading_01
+  {
+    margin-top: 5%;
+  }
+  .left-quote
+  {
+    display: none;
+  }
+  .right-quote
+  {
+    display: none;
+  }
+  .main-image
+  {
+    margin-top: 17%;
+  }
   .hero .heading h2 {
     font-size: 14px; 
     font-family:'Chivo Mono';
@@ -383,11 +543,12 @@
   padding: 1rem;
 }
 
-.project-button {
-  width: 8rem;
+.project-button .button-text{
+  margin-left: 6vw;
 }
-
-
+.project-button:hover .button-text{
+  margin-left: 6vw;
+}
   .team-container {
     flex-direction: column; 
     align-items: center; 
@@ -433,5 +594,3 @@
   transition: transform 0.3s ease-out;
   transform: translateY(0); /* Add this line to reset the initial translateY position */
 }
-
-

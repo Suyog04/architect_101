@@ -1,6 +1,25 @@
-.main-container{
-  background-color: #e1d9cf;
-  padding: 20px;
+@font-face {
+  font-family: 'Chivo Mono';
+
+  src: url('../../Font/chivomono-light-webfont.woff') format('woff'),
+       url('../../Font/chivomono-light-webfont.woff2') format('woff2'),
+       url('../../Font/ChivoMono-Bold.woff2') format('woff2');
+  font-weight: 200;
+}
+
+.parent-blog{
+  text-align: center;
+}
+
+.blog-heading{
+  margin-top: 2rem;
+  display:inline-block;
+}
+
+.blog-heading h1{
+  font-family: 'Chivo Mono';
+  font-size: 4rem;
+
 }
 
 .blog-list {
@@ -11,6 +30,7 @@
   background-color: #e1d9cf;
   max-width: 1200px;
   margin : 0 auto;
+  border-radius: 10px;
 }
 
 .blog-item {

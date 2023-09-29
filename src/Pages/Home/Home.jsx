@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import { BsFillArrowUpRightCircleFill } from 'react-icons/bs';
+import images_01 from '../../Assets/recreational/recreational_12.jpeg'
 
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/footer/Footer";
@@ -40,16 +42,16 @@ const Home = () => {
       name: "Ayush Bista",
       position: "Architect",
       facebook: "https://www.facebook.com/profile.php?id=100003140337479",
-      twitter: "https://www.twitter.com/ayushbista",
+      linkedin: "https://www.twitter.com/ayushbista",
       instagram: "https://www.instagram.com/ayushbista",
     },
     {
       id: 2,
       image: require("../../Assets/teams/Utsav.jpg"),
-      name: "Utshav Adhikari",
+      name: "Utsav Adhikari",
       position: "Architect",
       facebook: "https://www.facebook.com/ayush.bista",
-      twitter: "https://www.twitter.com/ayushbista",
+      linkedin: "https://www.twitter.com/ayushbista",
       instagram: "https://www.instagram.com/ayushbista",
     },
   ];
@@ -69,19 +71,41 @@ const Home = () => {
 
   return (
     <>
+    <NavBar />
     <PreLoader />
     <animated.section className="home-heading" style={videoSpring}>
       
       <div className="logo">
           <img src={logo} alt="logo" />
       </div>
-        <div className="home-container">
-          <h1>Elevate your escape</h1>
-          <h2>Your discovery experience starts here.</h2>
+        <div className="heading_01">
+          <h2>Brick Architects </h2>
+            <h2 style={{ margin: '0.5rem 0' }}>& Engineers</h2>
+            
+          </div>
+        <div className="main-image">
+        <div className="acont">
+          <img src={images_01}  />
+          <button className="resp-btn">
+            View Projects
+          </button>
+          <button className="arrow-button">
+            <a href = "/projects">
+              <BsFillArrowUpRightCircleFill className="icon" />
+              </a>
+              
+          </button>
         </div>
+        </div>
+        <div className="left-quote">
+            <p>EVERY AGE HAS ITS  WONDERS, BUT OURS IS THE AGE OF ARCHITECTURE</p>
+        </div>
+        <div className="right-quote">
+            <p>WE CREATE PLACES THAT DESERVE TO BE CALLED HOME</p>
+          </div>
     </animated.section>
 
-      <div className="hero-container">
+     
       <animated.section className="hero" style={heroSpring}>
         
         <div className="heading">
@@ -89,7 +113,6 @@ const Home = () => {
           <h2>Team of talented people</h2>
         </div>
       </animated.section>
-      </div>
 
       <section className="home-project">
   <div className="project-heading">
@@ -97,7 +120,7 @@ const Home = () => {
   </div>
   <div className="project-content">
     <div className="project-image">
-      <img src={project} alt="Project Image" />
+      <img src={project} />
     </div>
     <div className="project-details">
       <h2>Designing with balance and care</h2>
@@ -142,9 +165,9 @@ const Home = () => {
                     <FaFacebook size={24} />
                     </a>
                   )}
-                  {member.twitter && (
-                    <a href={member.twitter} target="_blank" rel="noopener noreferrer">
-                    <FaTwitter size={24} />
+                  {member.linkedin && (
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin size={24} />
                     </a>
                   )}
                   {member.instagram && (
